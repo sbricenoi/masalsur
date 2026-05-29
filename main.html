@@ -1,0 +1,1088 @@
+<!-- Cine y TV - Más al Sur (Actualizado) -->
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "on-tertiary-container": "#595145",
+              "outline-variant": "#d1c5b4",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "error-container": "#ffdad6",
+              "tertiary-fixed": "#ede1d1",
+              "on-tertiary-fixed": "#201b11",
+              "on-error-container": "#93000a",
+              "background": "#fcf9f4",
+              "on-primary-fixed": "#261900",
+              "outline": "#7f7667",
+              "surface-container-high": "#ebe8e3",
+              "surface": "#fcf9f4",
+              "on-primary-fixed-variant": "#5d4200",
+              "error": "#ba1a1a",
+              "primary": "#775a19",
+              "inverse-primary": "#e9c176",
+              "on-primary-container": "#6a4e0c",
+              "surface-tint": "#775a19",
+              "tertiary-fixed-dim": "#d0c5b5",
+              "primary-fixed": "#ffdea5",
+              "surface-variant": "#e5e2dd",
+              "on-secondary": "#ffffff",
+              "surface-dim": "#dcdad5",
+              "inverse-surface": "#31302d",
+              "secondary-fixed-dim": "#cac5c2",
+              "secondary-container": "#e4dfdb",
+              "on-surface-variant": "#4e4639",
+              "on-secondary-fixed-variant": "#494644",
+              "on-background": "#1c1c19",
+              "tertiary": "#655d51",
+              "on-secondary-fixed": "#1d1b19",
+              "secondary-fixed": "#e7e1de",
+              "on-tertiary-fixed-variant": "#4d463a",
+              "surface-bright": "#fcf9f4",
+              "tertiary-container": "#d0c5b5",
+              "primary-container": "#e9c176",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-container": "#65625f",
+              "inverse-on-surface": "#f3f0eb",
+              "surface-container-low": "#f6f3ee",
+              "surface-container-highest": "#e5e2dd",
+              "on-surface": "#1c1c19",
+              "on-error": "#ffffff",
+              "secondary": "#615e5b",
+              "primary-fixed-dim": "#e9c176",
+              "surface-container": "#f0ede8"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        animation: marquee 30s linear infinite;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 h-20 bg-background/80 backdrop-blur-lg border-b border-outline-variant/30">
+<div class="h-10">
+<img alt="Más Al Sur Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiMfqqYT2F2mr6wQg9g7Mjt8dVT_OZ8lOWvyEM5DZ45j8eQXQsxSiijKG5jlr1LVRZdA2SZoBwf_5AE0-VlQCBt9Sb4C6os6NCbKxDvGdvXNGDdJVjWQZyh0z1rviI_b8J1BAsiGvsBrJSZhH4vnKORXBMrYc5Ti8Xu53J2RBvhpZUqturoOzwg0zbKhOgRMjS5f6c-AkoitRf8r73ifE5kQ2pZXMS_g1a40wyzu_WbcuBloNJQj5ceqh7bKhSZRobcAoXxG0ug"/>
+</div>
+<div class="hidden md:flex items-center gap-10 font-headline font-bold tracking-tight">
+<a class="text-on-surface-variant/70 font-medium hover:text-primary transition-all duration-300" href="#">Inicio</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Películas</a>
+<a class="text-on-surface-variant/70 font-medium hover:text-primary transition-all duration-300" href="#">Series</a>
+<a class="text-on-surface-variant/70 font-medium hover:text-primary transition-all duration-300" href="#">Servicios</a>
+<a class="text-on-surface-variant/70 font-medium hover:text-primary transition-all duration-300" href="#">Contacto</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary">search</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-sm font-headline font-bold text-sm hover:opacity-90 active:scale-95 transition-all">Iniciar Proyecto</button>
+</div>
+</nav>
+<main class="pt-0">
+<!-- Hero Section -->
+<section class="relative h-[921px] w-full overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale brightness-90" data-alt="Toma cinematográfica de un boxeador en un ring oscuro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD22mh9gz17xx3hInglGl5WhkgfJRVox4MPt6EMgMkshK-MqxLsIAB3xSzJMTZ862jwNnOYxW0BQBXJdKH0DvilR5gIQkqhczrIkAHgdAaHsox6mSCHSpz36K0QsGtzb32AY-I8MZwAZ9ChDwITTb1Ha9yjCY00xXFLVoq-6mrqfa4CIq6dwh6chfy4dSBWsbKk8azdLH8hWWRtmbND7VG5iCCvWGOsTduLijdGEVhFO9w3p-fEh2xF-J_2mF_QIE9SfsY_3bwyPqE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background/40 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 h-full flex flex-col justify-end px-8 md:px-20 pb-20 max-w-7xl mx-auto w-full">
+<div class="flex items-center gap-4 mb-6">
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-xs font-bold tracking-[0.2em] uppercase rounded-sm">Largometraje</span>
+<span class="text-on-surface/60 text-xs font-bold tracking-[0.2em] uppercase">Estreno Otoño 2024</span>
+</div>
+<h1 class="font-headline font-black text-6xl md:text-9xl tracking-tighter text-on-surface leading-tight mb-4">
+                    BAILANDO <br/> <span class="text-primary italic">EN EL RING</span>
+</h1>
+<p class="max-w-2xl text-on-surface-variant text-lg md:text-xl font-light leading-relaxed mb-10">
+                    Una exploración visceral del ritmo y la violencia. Entre las cuerdas, cada movimiento es una lucha coreografiada por la supervivencia.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="group flex items-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-sm font-headline font-bold tracking-widest uppercase transition-all hover:bg-on-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                        Ver Trailer
+                    </button>
+<button class="group flex items-center gap-3 border border-outline px-8 py-4 rounded-sm font-headline font-bold tracking-widest uppercase transition-all hover:bg-surface-container">
+<span class="material-symbols-outlined">add</span>
+                        Archivos del Proyecto
+                    </button>
+</div>
+</div>
+</section>
+<!-- Technical Specs Ticker -->
+<section class="bg-surface-container py-8 overflow-hidden whitespace-nowrap border-y border-outline-variant/30">
+<div class="flex gap-20 animate-marquee items-center opacity-60 grayscale hover:grayscale-0 transition-all text-on-surface">
+<span class="text-xs font-bold tracking-[0.3em] uppercase">Rodado en ARRI ALEXA LF</span>
+<span class="text-xs font-bold tracking-[0.3em] uppercase">Relación de Aspecto 2.39:1</span>
+<span class="text-xs font-bold tracking-[0.3em] uppercase">Dolby Atmos Surround</span>
+<span class="text-xs font-bold tracking-[0.3em] uppercase">Lentes Panavision Primo</span>
+<span class="text-xs font-bold tracking-[0.3em] uppercase">Intermedio Digital 4K</span>
+<span class="text-xs font-bold tracking-[0.3em] uppercase">Rodado en ARRI ALEXA LF</span>
+<span class="text-xs font-bold tracking-[0.3em] uppercase">Relación de Aspecto 2.39:1</span>
+<span class="text-xs font-bold tracking-[0.3em] uppercase">Dolby Atmos Surround</span>
+</div>
+</section>
+<!-- Narrative & Cast (Asymmetric Layout) -->
+<section class="py-32 px-8 md:px-20 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-20">
+<!-- Synopsis Column -->
+<div class="md:col-span-7">
+<div class="mb-20">
+<h2 class="font-headline font-extrabold text-4xl tracking-tight mb-8 text-on-surface">LA NARRATIVA</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p>
+                            En el crudo Detroit de los años 70, Julian 'El Fantasma' Thorne no es solo un luchador; es un bailarín. El ring de boxeo sirve como su escenario, y cada knockout es un in crescendo en una sinfonía de moretones.
+                        </p>
+<p class="font-light italic border-l-2 border-primary pl-6 py-2 text-primary">
+                            "Una proeza cinematográfica que desdibuja la línea entre la destreza atlética y la expresión artística." - Film Quarterly
+                        </p>
+<p>
+                            A medida que asciende en los rangos, Julian debe confrontar el ritmo de su propio trauma, encontrando belleza en los espacios más brutales. Capturado a través de inquietantes lentes anamórficos, este proyecto redefine el drama deportivo como un poema visual.
+                        </p>
+</div>
+</div>
+<!-- Bento Grid Cast Section -->
+<div>
+<h2 class="font-headline font-extrabold text-4xl tracking-tight mb-8 uppercase text-on-surface">ELENCO</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-high p-6 flex flex-col justify-end min-h-[300px] group overflow-hidden relative rounded-sm">
+<img class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="Primer plano de un actor masculino" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLaTiBj4aYPrsj5Zx0rly4HrtOVbkE6144VSAsQgA-Qvbb75wUX4amJpT-UkeEG-E0l1sqyLNkUaYg4jgHPpM0OGHup4kc8QiBVLp-ctHcjEOzgDsBO-RfCIKnesGyRFHc2LZ2KNB4zrBa5mFXrj2Knlk02JkVDvcEEr_S-IAKwPSExPqm-9LDh9E7xC1Wo1x7lM2zvltn8diA-c1lro9EUA4hABfuO5X95cH7bXU_cULakzmC4vSHtM83a9sMadfAj-d-7xHInNo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="relative z-10">
+<p class="text-primary text-xs font-bold tracking-widest uppercase">Actor Principal</p>
+<h3 class="font-headline font-bold text-xl uppercase text-on-surface">Marcus Valente</h3>
+</div>
+</div>
+<div class="grid grid-rows-2 gap-4">
+<div class="bg-surface-container p-4 flex items-center gap-4 group rounded-sm border border-outline-variant/30">
+<div class="w-16 h-16 bg-surface-container-highest flex-shrink-0 overflow-hidden rounded-sm">
+<img class="w-full h-full object-cover grayscale" data-alt="Retrato de actriz secundaria" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpYGv2ddagiGYa3fyjO8xHF26mU8iLlpR6v2Wla9seCZJlTn3JJkmQaPKrGxSWS8Jhzz3X3VdlhpQqwCpX5wp0DKKcJ6LZc_994YIEcfvZe7Yybi1RJxJj6GRYHmbjrB16HYXVjWvZsPtmf1_CCwI2GH2MOl9gfM3goD0jY5Pn_-WdV73nGX34USkqB9dYsRRwuawZcwaKoXPcHZG5q24EXKctgSLZ1g-opBgUaRT6xBkyGi5PcBVIUHzsVfXKfseD0-XkUOzcNNs"/>
+</div>
+<div>
+<h4 class="font-bold uppercase text-sm text-on-surface">Elena Rossi</h4>
+<p class="text-xs text-on-surface-variant italic">Actriz de Reparto</p>
+</div>
+</div>
+<div class="bg-surface-container p-4 flex items-center gap-4 group rounded-sm border border-outline-variant/30">
+<div class="w-16 h-16 bg-surface-container-highest flex-shrink-0 overflow-hidden rounded-sm">
+<img class="w-full h-full object-cover grayscale" data-alt="Retrato de actor secundario" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwWcFiGOR8-o7pOyOjj5nVWRtsouqUD6U21QkB3pRppth5KFfl4fUsbwOH2gfVDFINjbQ9iVuC_sSsYWVs41Ly8Fbp31O2ZexblSEKjRezPkvG9mrSqq0HzAioY-fPqfU9Bpgv8LA_DLWqLHJmE-QYR5AkesHOFHpJ_QLixumSuUP5qWpldosJdmVRBfjUIE8-mH7pSW7tx0Rgu5BUyhyjTGopdHxr5pohAXaNwOV32kxsYRwmKf9mx9CAA5NfU9nspJ4Ww5GEFHA"/>
+</div>
+<div>
+<h4 class="font-bold uppercase text-sm text-on-surface">David Chen</h4>
+<p class="text-xs text-on-surface-variant italic">El Entrenador</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Technical Detail Column -->
+<div class="md:col-span-5 bg-surface-container-low p-12 border border-outline-variant/30 rounded-sm">
+<h2 class="font-headline font-extrabold text-2xl tracking-tighter mb-12 text-primary uppercase">FICHA TÉCNICA</h2>
+<div class="space-y-12">
+<div class="space-y-4">
+<p class="text-[10px] font-bold tracking-[0.4em] text-on-surface-variant/60 uppercase">Dirección</p>
+<p class="text-2xl font-headline font-bold text-on-surface">Luca Noir</p>
+</div>
+<div class="space-y-4">
+<p class="text-[10px] font-bold tracking-[0.4em] text-on-surface-variant/60 uppercase">Cinematografía</p>
+<p class="text-2xl font-headline font-bold text-on-surface">H. J. Sterling</p>
+</div>
+<div class="grid grid-cols-2 gap-8 pt-8 border-t border-outline-variant/30">
+<div class="space-y-2">
+<p class="text-[10px] font-bold tracking-[0.3em] text-on-surface-variant/60 uppercase">Ubicación</p>
+<p class="text-sm font-semibold uppercase text-on-surface">Detroit, MI</p>
+</div>
+<div class="space-y-2">
+<p class="text-[10px] font-bold tracking-[0.3em] text-on-surface-variant/60 uppercase">Estudio</p>
+<p class="text-sm font-semibold uppercase text-on-surface">Pinewood</p>
+</div>
+<div class="space-y-2">
+<p class="text-[10px] font-bold tracking-[0.3em] text-on-surface-variant/60 uppercase">Formato</p>
+<p class="text-sm font-semibold uppercase text-on-surface">Cine 65mm</p>
+</div>
+<div class="space-y-2">
+<p class="text-[10px] font-bold tracking-[0.3em] text-on-surface-variant/60 uppercase">Duración</p>
+<p class="text-sm font-semibold uppercase text-on-surface">128 Mins</p>
+</div>
+</div>
+<div class="pt-12">
+<div class="p-6 border border-primary/30 bg-primary/5 rounded-sm">
+<p class="text-[10px] font-black tracking-widest uppercase mb-4 text-primary">Nota del Director</p>
+<p class="text-sm leading-relaxed text-on-surface-variant italic">
+                                "Queríamos capturar la soledad del atleta. El ring es una catedral de soledad. Esta no es una película sobre ganar; es una película sobre cómo soportamos el movimiento."
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trailer Placeholder Section -->
+<section class="py-20 bg-surface-container">
+<div class="max-w-7xl mx-auto px-8 md:px-20">
+<div class="relative aspect-video bg-surface-variant group overflow-hidden cursor-pointer shadow-xl rounded-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="Plano cinematográfico general de un gimnasio de boxeo vacío" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzOsMx7BSIFwHQdJyyzjvSRvyoDm3VUPGc8fka65DpIyGrFlpozF_KBrQpnEBwnDkm_xz8JThyrXak4jFkVc4bUcFGFI-7jLdiInCyE3Q3h9Z38YOW1SozDXaMS69J_G7s8O3KIaGxMXU-Y7peaAW0OkAJM26TKP5ztBytze2wKqQaAiwl3xC4deWC2H4jH2OMk2yBCrPt0zOPsXZODWyITuEq83LA-rnkl75g9KTP5pKdQCjT7Fwgy429fxFOlA__Xlh2apP7XKI"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center bg-background/20 group-hover:bg-background/10 transition-all">
+<div class="w-24 h-24 rounded-full border border-primary flex items-center justify-center bg-background/60 backdrop-blur-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<p class="mt-6 font-headline font-bold text-xl tracking-[0.2em] uppercase text-on-surface drop-shadow-md">Primer Vistazo</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery / Key Frames -->
+<section class="py-32 overflow-hidden bg-background">
+<div class="px-8 md:px-20 max-w-7xl mx-auto mb-16 flex justify-between items-end">
+<div>
+<p class="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-4">LENGUAJE VISUAL</p>
+<h2 class="font-headline font-black text-5xl tracking-tighter uppercase text-on-surface">Fotogramas Clave</h2>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2 font-bold uppercase tracking-widest text-xs">
+                    Ver Galería Completa <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="flex gap-4 overflow-x-auto no-scrollbar px-8 md:px-20">
+<div class="min-w-[400px] h-[600px] bg-surface-container flex-shrink-0 rounded-sm overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Fotograma cinematográfico: primer plano de guantes de boxeo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCamJgpmUqJtC6MJ9QuropJuTQOgyYTfgWeEJydhzLStwuzPQJpf-49xPopBz8oY8wEw0SsgBM4rJFraMvCnDVSG38RK6tTLIFcxzCsGIq6W8irywrsuH_Ijg4pNMh6vYgYEaWDb4j6HBch_EgTIz9Pt_EmRBXDhq0pCZnashjcyzDUKUizSxWdwQJeXCc9rUov3g5-u4azf311bxb-QVc1guQq1a_ex-Yf5mJZNtdmnDFpY4aEHDI7VsTntW2vuLXSVJkEt1EJTpg"/>
+</div>
+<div class="min-w-[600px] h-[600px] bg-surface-container flex-shrink-0 rounded-sm overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Fotograma cinematográfico: luces de estadio en la niebla" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8HVJZZk7mMfBN1GpJGwolLxNbo4ErB-p0wvWcdNn4yIvmSCn0wy2WE_IvU8zcqidk2sdxudP7bQLnot5x3I0we2Df1DzBYYs9iC7TaYPy1PhCQXvb4mFXh7EYLWnMxkq2T_utn8ZgIiynmT_apBlbMZ12xBjdqB1movwaMkF27pZD-bVARa6MiXnrGcuJ_ij6c0B7Y5TZSWdbbApqYHGREE5aG85c7aN59OUgIZ1gtnLuUIqowPRA0IV9NC5QvzGQ4HxQ8XIKKy4"/>
+</div>
+<div class="min-w-[400px] h-[600px] bg-surface-container flex-shrink-0 rounded-sm overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Fotograma cinematográfico: silueta de atleta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ2_x9iWeXUq3fSlOqEgHO19gAozsRPvq06FpAK8d3THePc8ZbqNIgHFNH9Y2XxeotmnYJMfVs8uwkubP6O3BZYLPmYofnZyRAA4CRO08vWeLLYPqzPUHDagOxxYk87mKOC7hipDn5tWoOcCLAC9hdzEuLBvUNghq6spDLo_Qb2FsumlCIJ1R_9ZdL19_opzoUE5W97pMaQzYVy7zWHTANhztc-y-aWRzL71Ov0SgD1mQiQXCRIKviC820Q60eifTmhQrNH8yYoBo"/>
+</div>
+<div class="min-w-[500px] h-[600px] bg-surface-container flex-shrink-0 rounded-sm overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Fotograma cinematográfico: ojos concentrados" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoIWLUgbN3fK2WQyApHon7_Orsi-nFd2Fm3l5A6wEg7ibhmTNihs7OoWyQPe63ox24K5J6uE_78KG-p22NQNHaxt7SQN33OFKGnc197muWTSEbGXYlxSdw_luAvEYXKNdfTpjcEbyVDpJCuHp4IAOYpUmG6HWyYnRtoep9pg4NjJ7ty94e3EqcVR-foFtF9laW7fB0kKBM4lTglKBYY4wddaYpcXjjoY--RstQe8XuI4Xb2_fEw8Py0ddszP8fcJvIiIEUXnXOmno"/>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8 bg-surface-container-high border-y border-outline-variant/30">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline font-black text-4xl md:text-6xl tracking-tight mb-8 text-on-surface">¿INTERESADO EN <span class="text-primary italic">COLABORAR?</span></h2>
+<p class="text-on-surface-variant text-xl mb-12 font-light">Únete a nosotros en el siguiente capítulo de la narración cinematográfica. Actualmente estamos buscando nuestra próxima presentación principal.</p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-sm font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary-container hover:text-on-primary-container transition-all shadow-lg">Enviar Portafolio</button>
+<button class="border border-outline text-on-surface px-10 py-5 rounded-sm font-headline font-bold uppercase tracking-widest text-sm hover:bg-surface-container transition-all">Relación con Inversores</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 flex flex-col items-center gap-8 bg-surface-container-highest border-t border-outline-variant/30">
+<div class="h-8">
+<img alt="Más Al Sur Footer Logo" class="h-full object-contain grayscale opacity-60" src="https://lh3.googleusercontent.com/aida/ADBb0uiMfqqYT2F2mr6wQg9g7Mjt8dVT_OZ8lOWvyEM5DZ45j8eQXQsxSiijKG5jlr1LVRZdA2SZoBwf_5AE0-VlQCBt9Sb4C6os6NCbKxDvGdvXNGDdJVjWQZyh0z1rviI_b8J1BAsiGvsBrJSZhH4vnKORXBMrYc5Ti8Xu53J2RBvhpZUqturoOzwg0zbKhOgRMjS5f6c-AkoitRf8r73ifE5kQ2pZXMS_g1a40wyzu_WbcuBloNJQj5ceqh7bKhSZRobcAoXxG0ug"/>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-inter text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Política de Privacidad</a>
+<a class="font-inter text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Términos de Servicio</a>
+<a class="font-inter text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Kit de Prensa</a>
+<a class="font-inter text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Carreras</a>
+</div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">brand_family</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+<p class="font-inter text-xs uppercase tracking-widest text-on-surface-variant/60">© 2024 MÁS AL SUR. TODOS LOS DERECHOS RESERVADOS.</p>
+</footer>
+</body></html>
+
+<!-- Detalle de Proyecto - Más al Sur (Light) -->
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Inter:wght@300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+                "on-tertiary-container": "#595145",
+                "outline-variant": "#d1c5b4",
+                "on-primary": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "error-container": "#ffdad6",
+                "tertiary-fixed": "#ede1d1",
+                "on-tertiary-fixed": "#201b11",
+                "on-error-container": "#93000a",
+                "background": "#fcf9f4",
+                "on-primary-fixed": "#261900",
+                "outline": "#7f7667",
+                "surface-container-high": "#ebe8e3",
+                "surface": "#fcf9f4",
+                "on-primary-fixed-variant": "#5d4200",
+                "error": "#ba1a1a",
+                "primary": "#775a19",
+                "inverse-primary": "#e9c176",
+                "on-primary-container": "#6a4e0c",
+                "surface-tint": "#775a19",
+                "tertiary-fixed-dim": "#d0c5b5",
+                "primary-fixed": "#ffdea5",
+                "surface-variant": "#e5e2dd",
+                "on-secondary": "#ffffff",
+                "surface-dim": "#dcdad5",
+                "inverse-surface": "#31302d",
+                "secondary-fixed-dim": "#cac5c2",
+                "secondary-container": "#e4dfdb",
+                "on-surface-variant": "#4e4639",
+                "on-secondary-fixed-variant": "#494644",
+                "on-background": "#1c1c19",
+                "tertiary": "#655d51",
+                "on-secondary-fixed": "#1d1b19",
+                "secondary-fixed": "#e7e1de",
+                "on-tertiary-fixed-variant": "#4d463a",
+                "surface-bright": "#fcf9f4",
+                "tertiary-container": "#d0c5b5",
+                "primary-container": "#e9c176",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-container": "#65625f",
+                "inverse-on-surface": "#f3f0eb",
+                "surface-container-low": "#f6f3ee",
+                "surface-container-highest": "#e5e2dd",
+                "on-surface": "#1c1c19",
+                "on-error": "#ffffff",
+                "secondary": "#615e5b",
+                "primary-fixed-dim": "#e9c176",
+                "surface-container": "#f0ede8"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-hero {
+            text-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .poster-frame {
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-8 py-4 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-4">
+<img alt="M\u00e1s al Sur Logo" class="h-10 w-auto" data-alt="Logotipo de la productora M\u00e1s al Sur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKMvcqqKsZAwAFpjLPCwdgsCY0fG2PmRCCUuqtoOckgiS_pLweV3b1S6CyeUsuAHvSWmgCNyt5yaQ4lhxb-4fDen_zTjdfKr_VgQ5veiUnryrusHue08Hl-uTgOxwW9NnoLwSsvSpmdtQMInM8Gjj9pZUbfamNqVm1Vv4iZiJPjToH2Z8Y_XwMrExIeuhdZNmzV9JSiEA-bm6R9kF-RS0dKsnV9stU3VlxdGtADK4XSr3AlHvT1hWBCb2FnCiimIo44PsWFAcg1BM"/>
+<span class="text-2xl font-black tracking-tighter text-primary uppercase font-headline">NOIR STUDIOS</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-on-surface/70 hover:text-primary transition-colors font-headline font-bold tracking-tight" href="#">Inicio</a>
+<a class="text-on-surface/70 hover:text-primary transition-colors font-headline font-bold tracking-tight" href="#">Películas</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-headline font-bold tracking-tight" href="#">Series</a>
+<a class="text-on-surface/70 hover:text-primary transition-colors font-headline font-bold tracking-tight" href="#">Servicios</a>
+<a class="text-on-surface/70 hover:text-primary transition-colors font-headline font-bold tracking-tight" href="#">Contacto</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-all duration-300 scale-95 active:scale-90" data-icon="search">search</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-all duration-300 scale-95 active:scale-90" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</nav>
+<main class="pt-0">
+<!-- Hero Section -->
+<section class="relative h-[80vh] w-full overflow-hidden flex items-end">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover" data-alt="Escena cinematogr\u00e1fica de alta calidad de una serie de thriller" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLZvzEEopNsjhBnjKKtv_vIdbW_FcntPhFT1T5l14T4mmKKn5alL3ZWy1wDpgj9bWLDQemzsVGHotX1lpEU-nCyWVu4ZZjh9w83xVlglVomXv_xTG3bW7jSlQnacIn5O4XCpc51Ca8CtC5VRk5qXDy--fLSzQsDWDPgKtbDxG1bTToe_I-LNy6nfkNpxGf939SFWhMRLQomOyMbqoK6HRfr-J49-AyPLcu9BRgwx1l4erWvamezBIq7__FplSkgW2_UDiM2RwNht8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background/40 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-12 pb-24 max-w-6xl">
+<p class="text-primary font-headline font-bold tracking-[0.3em] uppercase mb-4 text-sm">Producciones Originales</p>
+<h1 class="text-6xl md:text-9xl font-headline font-black tracking-tighter text-on-surface uppercase leading-none mb-8">
+                    SERIES <br/> <span class="text-primary">ORIGINALES</span>
+</h1>
+<div class="flex gap-6">
+<button class="bg-primary text-on-primary px-8 py-4 font-headline font-black uppercase text-sm rounded-sm hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-95">Ver Tráiler</button>
+<button class="border border-outline text-on-surface px-8 py-4 font-headline font-black uppercase text-sm rounded-sm backdrop-blur-md hover:bg-on-surface/5 transition-all">Explorar Catálogo</button>
+</div>
+</div>
+</section>
+<!-- Categories / Filters -->
+<section class="px-12 py-12 bg-surface">
+<div class="flex flex-wrap items-center justify-center gap-4 md:gap-12">
+<button class="text-primary border-b-2 border-primary pb-2 font-headline font-bold uppercase tracking-widest text-xs transition-all">Todo</button>
+<button class="text-on-surface-variant hover:text-on-surface pb-2 font-headline font-bold uppercase tracking-widest text-xs transition-all">Drama</button>
+<button class="text-on-surface-variant hover:text-on-surface pb-2 font-headline font-bold uppercase tracking-widest text-xs transition-all">Thriller</button>
+<button class="text-on-surface-variant hover:text-on-surface pb-2 font-headline font-bold uppercase tracking-widest text-xs transition-all">Documental</button>
+<button class="text-on-surface-variant hover:text-on-surface pb-2 font-headline font-bold uppercase tracking-widest text-xs transition-all">Comedia</button>
+</div>
+</section>
+<!-- Series Gallery -->
+<section class="px-12 py-20 bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<!-- Sanhattan -->
+<div class="group cursor-pointer">
+<div class="aspect-[2/3] overflow-hidden poster-frame bg-surface-container-high transition-transform duration-500 group-hover:-translate-y-2 mb-6">
+<img alt="Sanhattan Series Poster" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-700" data-alt="P\u00f3ster de la serie Sanhattan, arquitectura moderna y sombras" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3D0fCHhLb1zW4AVYtVC0L95y3WPVWRCbyr_HeMaLwKEJMXPJvV7KpickLaEuXY8WGNRWB4hd_ofvMTM77q83Eoe0c_z8kmIz3k_hrQkCu79NVffqujkp9mu89RJQEY5RxhnBx_pMJgkYTrj3zyBSmwSZA3oD0xP8e1MAEGVnht6rnMpDyxlhpNnrGxgInav5gy5Y9308EyVJHUUM4Ytvi78D9MJ6qVbqWJbe_3w4d6-OYXELugmh1gzxy-2zg4HbQtCoxeJA7wdU"/>
+</div>
+<div class="px-2">
+<p class="text-primary font-label text-[10px] tracking-[0.2em] uppercase mb-1 font-bold">Drama Policial</p>
+<div class="flex justify-between items-center">
+<h3 class="text-xl font-headline font-extrabold uppercase tracking-tight text-on-surface">Sanhattan</h3>
+<span class="material-symbols-outlined text-primary scale-110 opacity-0 group-hover:opacity-100 transition-opacity" data-icon="play_circle">play_circle</span>
+</div>
+<p class="text-on-surface-variant text-xs font-body uppercase mt-1">2023 • 1 Temporada</p>
+</div>
+</div>
+<!-- Renata -->
+<div class="group cursor-pointer">
+<div class="aspect-[2/3] overflow-hidden poster-frame bg-surface-container-high transition-transform duration-500 group-hover:-translate-y-2 mb-6">
+<img alt="Renata Series Poster" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-700" data-alt="P\u00f3ster de la serie Renata, retrato dram\u00e1tico con luz cenital" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSZ7yVDEm15VC53or8jqN7YZ5wla1MYxqf9qNWRxvUDsVMvcA0T5Caw7wVmjhurwAljeUlBBtWFXArwVj1rSW1yPoP0BqaWtadRiB9lAH63f2lUS0K7spCS_cB36D-m8ljcNLB4YQP7VZAr_XCwctIP8Ov_GL3pKJXPZBRn8wJhWM_YGHLpvo7j1SblVwB71kh1SpNtEpddtE-OaSiseZvAuwxYgmA8Zs4sNrULpN8CRXHW9vpifiNNvWweONBq4dOXMtrgyxaZ3M"/>
+</div>
+<div class="px-2">
+<p class="text-primary font-label text-[10px] tracking-[0.2em] uppercase mb-1 font-bold">Thriller Psicológico</p>
+<div class="flex justify-between items-center">
+<h3 class="text-xl font-headline font-extrabold uppercase tracking-tight text-on-surface">Renata</h3>
+<span class="material-symbols-outlined text-primary scale-110 opacity-0 group-hover:opacity-100 transition-opacity" data-icon="play_circle">play_circle</span>
+</div>
+<p class="text-on-surface-variant text-xs font-body uppercase mt-1">2024 • Próximamente</p>
+</div>
+</div>
+<!-- Southern Cross -->
+<div class="group cursor-pointer">
+<div class="aspect-[2/3] overflow-hidden poster-frame bg-surface-container-high transition-transform duration-500 group-hover:-translate-y-2 mb-6">
+<img alt="Southern Cross Poster" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-700" data-alt="P\u00f3ster de Southern Cross, paisaje nevado y oscuro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcQGyUBtPCqBaGd1MDtJQiQ-IpQ3fPFcFfeDcipSpZxKAxAzuN4vUC_TCl6B-vVP6RRKHrbIadbeCsPEL_L42FNFGKVyOLXsNd051jLrXXIFhRVdd31YPKLtlIEfYapA_wjN69zvu3LL4pY-Igufk0HBrBwiFRx-W0vTh5xqW-F0n6s7pHWQKUYOFfHGKqBpMupFz9MoEIZZBKnDD38UGJdDIAaDVSuPd4bRP3RIzqgljW8UaqiBPE-CzgC9xDt1J63JMGakeF6Dw"/>
+</div>
+<div class="px-2">
+<p class="text-primary font-label text-[10px] tracking-[0.2em] uppercase mb-1 font-bold">Documental</p>
+<div class="flex justify-between items-center">
+<h3 class="text-xl font-headline font-extrabold uppercase tracking-tight text-on-surface">Southern Cross</h3>
+<span class="material-symbols-outlined text-primary scale-110 opacity-0 group-hover:opacity-100 transition-opacity" data-icon="play_circle">play_circle</span>
+</div>
+<p class="text-on-surface-variant text-xs font-body uppercase mt-1">2022 • Miniserie</p>
+</div>
+</div>
+<!-- Ink & Blood -->
+<div class="group cursor-pointer">
+<div class="aspect-[2/3] overflow-hidden poster-frame bg-surface-container-high transition-transform duration-500 group-hover:-translate-y-2 mb-6">
+<img alt="Ink &amp; Blood Poster" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-700" data-alt="P\u00f3ster de Ink and Blood, detalle de caligraf\u00eda antigua y sombras" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPsux2Nwrxilt6RYblj6G4diDZVziuI0cDTEKJGh5_b0-xMZwANaN5-SurTAwWz9Nlpnw5pX9T-DnE1P-dRBuFR9HzHLPwUrSku_K1QFYnTvq2xfijNNGVqIrQeprwVmG522Y132pvPyaAfSYB117uyd5Ip5pet64J-a-wPE-XycJ0VfJjo9bUcylpW39p907dM4JH5o5PG3adw7coTMPElJizr9CKvbcKIMpjJQIiQzrw7xKgxOLEl3waLf_4jI-P5jufbbWHBvk"/>
+</div>
+<div class="px-2">
+<p class="text-primary font-label text-[10px] tracking-[0.2em] uppercase mb-1 font-bold">Drama Histórico</p>
+<div class="flex justify-between items-center">
+<h3 class="text-xl font-headline font-extrabold uppercase tracking-tight text-on-surface">Ink &amp; Blood</h3>
+<span class="material-symbols-outlined text-primary scale-110 opacity-0 group-hover:opacity-100 transition-opacity" data-icon="play_circle">play_circle</span>
+</div>
+<p class="text-on-surface-variant text-xs font-body uppercase mt-1">2024 • Nueva Serie</p>
+</div>
+</div>
+</div>
+</section>
+<!-- In Production Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="px-12 mb-16 flex flex-col items-center">
+<span class="text-primary font-headline font-bold tracking-[0.4em] uppercase text-xs mb-4">Próximos Estrenos</span>
+<h2 class="text-5xl font-headline font-black uppercase text-center tracking-tighter text-on-surface">EN PRODUCCIÓN</h2>
+<div class="w-24 h-1 bg-primary mt-6"></div>
+</div>
+<div class="flex flex-col lg:flex-row gap-8 px-12 max-w-screen-2xl mx-auto">
+<div class="flex-1 relative group h-[500px] overflow-hidden poster-frame">
+<img class="w-full h-full object-cover transition-all duration-1000 group-hover:scale-105" data-alt="Behind the scenes, c\u00e1mara cinematogr\u00e1fica en set oscuro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn7RwvrGK8x63qJkSm-iy6jHWHpIe8lZrZVd1FhlNL83Y_IbjTSHOx5x6pF_MDaz0iYDq0NNGTFJvqXwnXknaEc_wWeKdxloXfFSZNZnGrHdpbt-OysTxu11beqBpJKJGPLVyrt_spLvw3KZoiMpfNnTM3u2emtBJlmDo4rjSzNMa5A1ZAwf0q-yQJlAgNWg9xigIIRmnp-DiChf8i7yHHydidEmFzVz7SYnBNJu0yB717DQWXHUaRGjXF5RmCOTipShqAK8blpKQ"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center p-8 bg-background/60 group-hover:bg-background/20 transition-all">
+<p class="text-primary font-label text-xs tracking-widest uppercase mb-2 font-black">Detrás de Cámaras</p>
+<h4 class="text-3xl font-headline font-black uppercase tracking-widest text-on-surface">Proyecto Austral</h4>
+<div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<p class="text-xs uppercase tracking-[0.3em] font-bold text-on-surface bg-background px-4 py-2 border border-outline">Invierno 2025</p>
+</div>
+</div>
+</div>
+<div class="flex-1 relative group h-[500px] overflow-hidden poster-frame">
+<img class="w-full h-full object-cover transition-all duration-1000 group-hover:scale-105" data-alt="Behind the scenes, iluminaci\u00f3n de estudio y sombras" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZDU9EHji-pcCowapgOYoTfyXeC9UXF9D9gHvV0KFawX6ee4PVtwxQGKweCS64xRZ4bz6ol7jszd8tQLYOVDhPeljcL0S8Z9asdO0ciPLfL5lN2XwTrKSenJx7ORtPIlMRzedQuwJjRQgkWpmNxwLCerM2FOJVWu3dBcALecpwFaOIAK9kTcChzBdMzSNjd5Ze32bA4GIp_wtd7zPC8hmgHEXBQ_pR-burfi-e07FQRc1PB1RKW6TR2-l4b50VB7-cITlvESnn4SY"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center p-8 bg-background/60 group-hover:bg-background/20 transition-all">
+<p class="text-primary font-label text-xs tracking-widest uppercase mb-2 font-black">Pre-Producción</p>
+<h4 class="text-3xl font-headline font-black uppercase tracking-widest text-on-surface">Niebla Negra</h4>
+<div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<p class="text-xs uppercase tracking-[0.3em] font-bold text-on-surface bg-background px-4 py-2 border border-outline">Otoño 2025</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 bg-background flex flex-col items-center text-center px-6">
+<h2 class="text-4xl md:text-6xl font-headline font-black uppercase mb-8 max-w-3xl leading-tight text-on-surface">
+                ¿Tienes una <span class="text-primary">idea</span> para una serie?
+            </h2>
+<p class="text-on-surface-variant font-body text-lg mb-12 max-w-xl">
+                Buscamos historias auténticas, oscuras y con carácter. Hablemos de cómo llevar tu visión a la pantalla.
+            </p>
+<button class="group flex items-center gap-4 bg-primary text-on-primary px-12 py-6 font-headline font-black uppercase tracking-widest text-sm rounded-sm hover:translate-y-[-4px] transition-all hover:shadow-2xl hover:shadow-primary/30">
+                Contactar
+                <span class="material-symbols-outlined transition-transform group-hover:translate-x-2" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest w-full py-16 border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-start px-12 w-full max-w-screen-2xl mx-auto gap-12">
+<div class="flex flex-col gap-4">
+<span class="text-2xl font-black text-primary font-headline tracking-tighter">NOIR STUDIOS</span>
+<p class="text-on-surface-variant text-sm font-label tracking-wide uppercase">© 2024 NOIR STUDIOS. THE DIRECTOR'S CUT.</p>
+</div>
+<div class="grid grid-cols-2 gap-x-16 gap-y-4">
+<a class="text-on-surface/60 hover:text-primary transition-colors font-label text-xs tracking-[0.2em] uppercase font-bold" href="#">Privacidad</a>
+<a class="text-on-surface/60 hover:text-primary transition-colors font-label text-xs tracking-[0.2em] uppercase font-bold" href="#">Términos</a>
+<a class="text-on-surface/60 hover:text-primary transition-colors font-label text-xs tracking-[0.2em] uppercase font-bold" href="#">Prensa</a>
+<a class="text-on-surface/60 hover:text-primary transition-colors font-label text-xs tracking-[0.2em] uppercase font-bold" href="#">Inversores</a>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-all p-3 border border-outline-variant rounded-full" data-icon="share">share</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-all p-3 border border-outline-variant rounded-full" data-icon="language">language</span>
+</div>
+</div>
+</footer>
+</body></html>
+
+<!-- Series - Más al Sur (Light) -->
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contacto | Más al Sur</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-container": "#595145",
+                        "outline-variant": "#d1c5b4",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ede1d1",
+                        "on-tertiary-fixed": "#201b11",
+                        "on-error-container": "#93000a",
+                        "background": "#fcf9f4",
+                        "on-primary-fixed": "#261900",
+                        "outline": "#7f7667",
+                        "surface-container-high": "#ebe8e3",
+                        "surface": "#fcf9f4",
+                        "on-primary-fixed-variant": "#5d4200",
+                        "error": "#ba1a1a",
+                        "primary": "#775a19",
+                        "inverse-primary": "#e9c176",
+                        "on-primary-container": "#6a4e0c",
+                        "surface-tint": "#775a19",
+                        "tertiary-fixed-dim": "#d0c5b5",
+                        "primary-fixed": "#ffdea5",
+                        "surface-variant": "#e5e2dd",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dcdad5",
+                        "inverse-surface": "#31302d",
+                        "secondary-fixed-dim": "#cac5c2",
+                        "secondary-container": "#e4dfdb",
+                        "on-surface-variant": "#4e4639",
+                        "on-secondary-fixed-variant": "#494644",
+                        "on-background": "#1c1c19",
+                        "tertiary": "#655d51",
+                        "on-secondary-fixed": "#1d1b19",
+                        "secondary-fixed": "#e7e1de",
+                        "on-tertiary-fixed-variant": "#4d463a",
+                        "surface-bright": "#fcf9f4",
+                        "tertiary-container": "#d0c5b5",
+                        "primary-container": "#e9c176",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#65625f",
+                        "inverse-on-surface": "#f3f0eb",
+                        "surface-container-low": "#f6f3ee",
+                        "surface-container-highest": "#e5e2dd",
+                        "on-surface": "#1c1c19",
+                        "on-error": "#ffffff",
+                        "secondary": "#615e5b",
+                        "primary-fixed-dim": "#e9c176",
+                        "surface-container": "#f0ede8"
+                    },
+                    fontFamily: {
+                        "headline": ["Epilogue"],
+                        "body": ["Epilogue"],
+                        "label": ["Epilogue"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .cinematic-gradient {
+            background: radial-gradient(circle at center, rgba(119, 90, 25, 0.05) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 w-full max-w-none bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10">
+<div class="text-2xl font-black tracking-tighter text-primary uppercase font-headline flex items-center gap-3">
+<img alt="Más al Sur Logo" class="h-8 w-auto filter grayscale brightness-50" data-alt="Más al Sur production company logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ0PaYq38jwY6PA0z4PHYhVMLLdraGKu9vdxWDDWWFQTU6m10hfkwxo2rZBX0gwwAVZHiYZKRZiwGE_Qlaovgjg-iFJ_8wmcuAmlFVzChYtg0sSs0HhI-L4Kz4drj0Vzhr7J0YW0NbBSGaFF3DaTTh_Z3VoZZUa1IWpvVcpfgjTl-N93hBr4vKQ-t3cIYvmJyITxSQ1d7aICtJT3HPMq48u1ySjZZVBNlcHJbhFtfIDwJL7q1-Za4zqbRYD4ySp68gk-Vxip1fm08"/>
+<span>Más al Sur</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline font-bold tracking-tight text-on-surface/70 hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="font-headline font-bold tracking-tight text-on-surface/70 hover:text-primary transition-colors duration-300" href="#">Películas</a>
+<a class="font-headline font-bold tracking-tight text-on-surface/70 hover:text-primary transition-colors duration-300" href="#">Series</a>
+<a class="font-headline font-bold tracking-tight text-on-surface/70 hover:text-primary transition-colors duration-300" href="#">Servicios</a>
+<a class="font-headline font-bold tracking-tight text-primary border-b-2 border-primary pb-1" href="#">Contacto</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary scale-95 transition-transform duration-200">menu</button>
+</div>
+</nav>
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative min-h-[600px] flex items-end px-8 pb-24 pt-48 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-10 grayscale" data-alt="Dark cinematic film set with professional lighting equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDti0i-DBQPf4rXvHAdctbZgvbSF3XsdEdEQCX9GknGUnq35IySyPKUng7Hdp-GEzWzEjWLV7BJWhEk1A7tQy5uF780Ws_7-Mgeq9ewmu0MQdtp2EKIW7foG_dH5aqU0ZNqtGdN5kpozE9-0RaH05h_1Lfry1LPJRhuEeAjjT-O-KnwkEfr6CLsgy1nSXJylJ2V-1wP4T3KP3NIOWhlHHjO_FhL9a9nDS8DlFSCK2tEloJrjotVuVT99wp8l9bMgxzq43arL30TLZg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-6xl w-full">
+<span class="text-primary font-headline font-bold tracking-[0.2em] text-sm mb-4 block uppercase">The Director's Office</span>
+<h1 class="text-6xl md:text-8xl font-black font-headline tracking-tighter text-on-surface uppercase leading-[0.9] max-w-4xl">
+                    Hablemos de tu <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-on-primary-container to-primary">próximo proyecto</span>
+</h1>
+</div>
+</section>
+<!-- Main Content Area: Bento-ish Grid -->
+<section class="px-8 py-20 grid grid-cols-1 lg:grid-cols-12 gap-16 max-w-[1400px] mx-auto">
+<!-- Form Section (Column 1-7) -->
+<div class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-xl relative overflow-hidden border border-outline-variant/30 shadow-sm">
+<div class="cinematic-gradient absolute inset-0 pointer-events-none"></div>
+<h2 class="text-3xl font-headline font-extrabold tracking-tight mb-8 text-on-surface uppercase">Guioniza tu visión</h2>
+<form class="space-y-8 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface/60">Nombre Completo</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/50 outline-none focus:border-primary focus:ring-1 focus:ring-primary p-4 transition-all duration-300 text-on-surface rounded-lg placeholder:text-on-surface-variant/40" placeholder="Escribe tu nombre" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface/60">Correo Electrónico</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/50 outline-none focus:border-primary focus:ring-1 focus:ring-primary p-4 transition-all duration-300 text-on-surface rounded-lg placeholder:text-on-surface-variant/40" placeholder="nombre@ejemplo.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface/60">Tipo de Proyecto</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant/50 outline-none focus:border-primary focus:ring-1 focus:ring-primary p-4 transition-all duration-300 text-on-surface appearance-none rounded-lg">
+<option>Largometraje</option>
+<option>Cortometraje</option>
+<option>Publicidad / Comercial</option>
+<option>Serie Documental</option>
+<option>Otro</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface/60">Mensaje / Sinopsis</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant/50 outline-none focus:border-primary focus:ring-1 focus:ring-primary p-4 transition-all duration-300 text-on-surface rounded-lg placeholder:text-on-surface-variant/40" placeholder="Cuéntanos los detalles..." rows="5"></textarea>
+</div>
+<button class="w-full md:w-auto px-12 py-4 bg-primary text-on-primary font-headline font-black uppercase tracking-widest text-sm rounded-lg hover:bg-on-primary-container hover:shadow-xl hover:shadow-primary/20 active:scale-95 transition-all duration-300" type="submit">
+                        Enviar Propuesta
+                    </button>
+</form>
+</div>
+<!-- Contact Info (Column 8-12) -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-16">
+<!-- Info Blocks -->
+<div class="space-y-12">
+<div class="space-y-4">
+<h3 class="text-primary font-headline font-bold text-lg uppercase tracking-wider">Sede Central</h3>
+<p class="text-on-surface/80 font-body text-xl leading-relaxed">
+                            Av. Nueva Providencia 1881,<br/>
+                            Oficina 1205, Santiago.<br/>
+                            Región Metropolitana, Chile.
+                        </p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-label uppercase tracking-widest hover:gap-4 transition-all font-bold" href="#">
+                            Ver en Mapa <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+<div class="space-y-4">
+<h3 class="text-primary font-headline font-bold text-lg uppercase tracking-wider">Comunicaciones</h3>
+<div class="space-y-2">
+<p class="text-on-surface/80 font-body text-xl">contacto@masalsur.cl</p>
+<p class="text-on-surface/80 font-body text-xl">+56 2 2456 7890</p>
+</div>
+</div>
+<div class="space-y-4">
+<h3 class="text-primary font-headline font-bold text-lg uppercase tracking-wider">Redes</h3>
+<div class="flex gap-6">
+<a class="w-12 h-12 flex items-center justify-center border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">camera</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">movie</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">work</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Talent Section -->
+<div class="bg-surface-container p-8 rounded-xl border-l-4 border-primary shadow-sm">
+<h3 class="text-2xl font-headline font-extrabold text-on-surface uppercase mb-4 tracking-tight">¿Eres un creador?</h3>
+<p class="text-on-surface-variant font-body mb-6 leading-relaxed">
+                        Siempre estamos buscando nuevos directores, guionistas y talentos visuales para nuestras próximas producciones. Envíanos tu reel o portafolio.
+                    </p>
+<a class="text-primary font-headline font-bold border-b-2 border-primary/20 pb-1 hover:border-primary transition-all" href="mailto:talento@masalsur.cl">
+                        talento@masalsur.cl
+                    </a>
+</div>
+</div>
+</section>
+<!-- Location Visual Anchor (Light Mode Style) -->
+<section class="h-[400px] w-full grayscale opacity-20 hover:opacity-100 transition-opacity duration-700 overflow-hidden border-y border-outline-variant/30">
+<img class="w-full h-full object-cover invert" data-alt="Stylized architectural map view of Santiago Chile in light tones" data-location="Santiago, Chile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8b0Oc7d_FXTFTj5tx8o5rYs7GScBFS8_usVoCdW__dFs9caDnBtM1BN7SdOXUOri-_lVl-OID-vnWhUp2aEOrPbp5VtskF3s10SDbdne3kePhHNlDtpbVqox3UNSwVuC0U4AlqHvjUaeicMCoK23wa587taPcydq9XcONl59MxBn0Lhl8XLXtng1JdJThQpWgyPb2x5iEjDsv6qWailAsZdBiIYV7dA9DCHgmNab95-J0rBFO5N2JsdByuEWvfXnaTL_Jn_0A_8Q"/>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-surface-container-low w-full py-12 px-8 border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 w-full max-w-[1400px] mx-auto">
+<div class="flex items-center gap-4">
+<div class="text-lg font-bold text-primary font-headline uppercase tracking-tighter">Más al Sur</div>
+<div class="h-4 w-px bg-outline-variant/40"></div>
+<p class="font-headline text-sm tracking-wide text-on-surface/60">
+                    © 2024 Más al Sur. Todos los derechos reservados.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-headline text-sm tracking-wide text-on-surface/40 hover:text-primary transition-all" href="#">Privacidad</a>
+<a class="font-headline text-sm tracking-wide text-on-surface/40 hover:text-primary transition-all" href="#">Términos</a>
+<a class="font-headline text-sm tracking-wide text-on-surface/40 hover:text-primary transition-all" href="#">Prensa</a>
+<a class="font-headline text-sm tracking-wide text-on-surface/40 hover:text-primary transition-all" href="#">Trabajo</a>
+</div>
+</div>
+</footer>
+</body></html>
+
+<!-- Contacto - Más al Sur (Light) -->
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-tertiary-container": "#595145",
+                "outline-variant": "#d1c5b4",
+                "on-primary": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "error-container": "#ffdad6",
+                "tertiary-fixed": "#ede1d1",
+                "on-tertiary-fixed": "#201b11",
+                "on-error-container": "#93000a",
+                "background": "#fcf9f4",
+                "on-primary-fixed": "#261900",
+                "outline": "#7f7667",
+                "surface-container-high": "#ebe8e3",
+                "surface": "#fcf9f4",
+                "on-primary-fixed-variant": "#5d4200",
+                "error": "#ba1a1a",
+                "primary": "#775a19",
+                "inverse-primary": "#e9c176",
+                "on-primary-container": "#6a4e0c",
+                "surface-tint": "#775a19",
+                "tertiary-fixed-dim": "#d0c5b5",
+                "primary-fixed": "#ffdea5",
+                "surface-variant": "#e5e2dd",
+                "on-secondary": "#ffffff",
+                "surface-dim": "#dcdad5",
+                "inverse-surface": "#31302d",
+                "secondary-fixed-dim": "#cac5c2",
+                "secondary-container": "#e4dfdb",
+                "on-surface-variant": "#4e4639",
+                "on-secondary-fixed-variant": "#494644",
+                "on-background": "#1c1c19",
+                "tertiary": "#655d51",
+                "on-secondary-fixed": "#1d1b19",
+                "secondary-fixed": "#e7e1de",
+                "on-tertiary-fixed-variant": "#4d463a",
+                "surface-bright": "#fcf9f4",
+                "tertiary-container": "#d0c5b5",
+                "primary-container": "#e9c176",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-container": "#65625f",
+                "inverse-on-surface": "#f3f0eb",
+                "surface-container-low": "#f6f3ee",
+                "surface-container-highest": "#e5e2dd",
+                "on-surface": "#1c1c19",
+                "on-error": "#ffffff",
+                "secondary": "#615e5b",
+                "primary-fixed-dim": "#e9c176",
+                "surface-container": "#f0ede8"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-desktop": "64px",
+                "gutter": "32px",
+                "margin-mobile": "20px",
+                "unit": "8px",
+                "max-width": "1440px"
+        },
+        "fontFamily": {
+                "headline-lg": ["Epilogue"],
+                "body-lg": ["Epilogue"],
+                "label-caps": ["Epilogue"],
+                "headline-lg-mobile": ["Epilogue"],
+                "display-lg-mobile": ["Epilogue"],
+                "headline-md": ["Epilogue"],
+                "display-lg": ["Epilogue"],
+                "body-md": ["Epilogue"],
+                "headline": ["Epilogue"],
+                "body": ["Epilogue"],
+                "inter": ["Inter"]
+        }
+      },
+    },
+  }
+</script>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+        background-color: #fcf9f4;
+        color: #1c1c19;
+    }
+    .text-balance {
+        text-wrap: balance;
+    }
+</style>
+</head>
+<body class="font-body selection:bg-primary/30 selection:text-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 h-20 bg-background/90 backdrop-blur-lg border-b border-outline-variant/30">
+<div class="h-10 flex items-center">
+<img alt="Logo MÁS AL SUR" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiMfqqYT2F2mr6wQg9g7Mjt8dVT_OZ8lOWvyEM5DZ45j8eQXQsxSiijKG5jlr1LVRZdA2SZoBwf_5AE0-VlQCBt9Sb4C6os6NCbKxDvGdvXNGDdJVjWQZyh0z1rviI_b8J1BAsiGvsBrJSZhH4vnKORXBMrYc5Ti8Xu53J2RBvhpZUqturoOzwg0zbKhOgRMjS5f6c-AkoitRf8r73ifE5kQ2pZXMS_g1a40wyzu_WbcuBloNJQj5ceqh7bKhSZRobcAoXxG0ug"/>
+</div>
+<div class="hidden md:flex items-center gap-10 font-headline font-bold tracking-tight">
+<a class="text-on-surface-variant/70 font-medium hover:text-primary transition-all duration-300" href="#">Inicio</a>
+<a class="text-on-surface-variant/70 font-medium hover:text-primary transition-all duration-300" href="#">Películas</a>
+<a class="text-on-surface-variant/70 font-medium hover:text-primary transition-all duration-300" href="#">Series</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Servicios</a>
+<a class="text-on-surface-variant/70 font-medium hover:text-primary transition-all duration-300" href="#">Contacto</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-sm font-headline font-bold text-sm uppercase tracking-wider active:scale-95 transition-transform shadow-md">
+    Iniciar Proyecto
+</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[550px] flex items-center px-8 md:px-20 overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-15 grayscale" data-alt="Cinematic close-up of a film camera lens on a dark set" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmTeOzcLIvVv2oo6M7n7WuFRARvAKd_1GyibjuGwTjM3N0mAemHNPmBVFQoLTIIPVInuCN-78-LWeVcSFRaecoqtX5cBHkSI7xwBO30snHJyMyDLFV5u8FRVEb1ZYg8_9_Vh9cPk0BbNdctUkl8Y5aXYQJv6QCakIv3ZLgucT6ZULjAAF-GdTMMU0t7NXvfNitrJDze9esuz9wMMvHGsVSQ848BUSPZTjDfpOM57OwMWTwfQIbOn6SJ5s9rbbe5ESTH7gv_vDADCs"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<span class="text-primary font-headline font-bold tracking-[0.2em] uppercase text-xs mb-6 block">Nuestras Capacidades</span>
+<h1 class="text-6xl md:text-8xl font-headline font-black tracking-tighter text-on-surface mb-8 leading-[0.9] uppercase">
+    CREANDO LO <br/><span class="text-primary italic">INVISIBLE.</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl leading-relaxed text-balance">
+    Desde el desarrollo del guion hasta la distribución global, ofrecemos soluciones de producción integrales para cineastas que exigen una calidad sin concesiones.
+</p>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-24 px-8 md:px-20 bg-background">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Pre-production (Large Asymmetric) -->
+<div class="md:col-span-7 group relative bg-surface-container-lowest overflow-hidden min-h-[500px] flex flex-col justify-end p-10 border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-10 group-hover:scale-105 transition-transform duration-700" data-alt="Drafting scripts and storyboards on a wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBZAALwJ75XO5c_xpRA_-L0tqtclONIkiE4PXgom-Ir9JBA6MxcNFOXAUbIM3RxxLo5y-iCrGBTWzYr-jpyoDBZSsoKGD3USrqBrmT_CJ9cMnGiOilU_z2v7exdLitPyc1-Bt8yEm5dsL-bigBWykavxfr6_p548rltmUOpp-g9hg3PvSvHgpbbA7aAyj2YL2UyTofNGk7sF8ttwpETecaD5YxaaXA6sDvyZgXxf1GnY2rVE0KqD5U8qjobdSrKmg-lytQ4GcYiRQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">edit_note</span>
+<h3 class="text-4xl font-headline font-black text-on-surface mb-6 uppercase">Pre-producción</h3>
+<p class="text-on-surface-variant max-w-md mb-8 leading-relaxed text-lg">
+    La base de cada obra maestra. Nos especializamos en pulido de guiones, storyboarding integral, casting de talentos de élite y búsqueda de locaciones.
+</p>
+<ul class="flex flex-wrap gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
+<li class="px-3 py-1 bg-primary/5 rounded-full">Guionismo</li>
+<li class="px-3 py-1 bg-primary/5 rounded-full">Casting</li>
+<li class="px-3 py-1 bg-primary/5 rounded-full">Presupuesto</li>
+<li class="px-3 py-1 bg-primary/5 rounded-full">Locaciones</li>
+</ul>
+</div>
+</div>
+<!-- Production (Square Editorial) -->
+<div class="md:col-span-5 group relative bg-surface-container-low overflow-hidden flex flex-col justify-end p-10 border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-10 group-hover:scale-105 transition-transform duration-700" data-alt="A professional film set with high-end lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTnBrrYCQ8FscZPAzoKdNK9474pQWMQVz-n2EREVvLyn_Pc9g0HOpiOs6v3P1zucYcQo98wzikfEaZnhXhVv3NnmXVeUsB27MkcGlFyfDBN3eW5jyPQosucqd1O6Li6Vo6a58QkzTHTLMZBySOA2J0bWUrbVufctClCt1A4nFgElTweMBK97aEZGJle-DXQT26ao9x6fVeg5euLSBG7Y6Pj25IcpQW2VGfkwBrUiz7Ls-LR5pOsu9sCxzeIBQEtXkWZDBPjtn-xm0"/>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">videocam</span>
+<h3 class="text-3xl font-headline font-black text-on-surface mb-4 uppercase">Producción</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+    Ejecución de alto nivel en el set. Nuestros equipos utilizan la última tecnología RED y ARRI para capturar visuales impresionantes.
+</p>
+<button class="text-primary font-headline font-bold text-sm flex items-center gap-2 group-hover:gap-4 transition-all uppercase tracking-widest border-b border-primary/20 pb-1">
+    Ver casos de estudio <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Post-production (Tall Vertical) -->
+<div class="md:col-span-4 group relative bg-surface-container-low overflow-hidden min-h-[400px] flex flex-col justify-end p-10 border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-10 group-hover:scale-105 transition-transform duration-700" data-alt="Professional video editing suite with multiple monitors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbj5fkhZl_DE4bb2dF1vwjR7HPIy6c7q499ww-uiOo5O1UpwXimhwjoDtAS-8atz3AQyn6WpMUb94NqqSUdXqw_NIkcE7FSQklkIKz_o8dHvQ612FNl5rLYrJvlbSnINYozYbsF5KxZZEx4t4oB4hs_mi173H5gF9sBwFrnn9KDtprkC-e5DvCJaLRPrVvVqosBk20u3oWR-niR-o1pzWEiHqf_4SCEsO07clv6ugUhmVKTqmftQ2CBY6spwKDfVeYeVl2hmBayCM"/>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">movie_edit</span>
+<h3 class="text-3xl font-headline font-black text-on-surface mb-4 uppercase">Post-producción</h3>
+<p class="text-on-surface-variant leading-relaxed">
+    Donde la historia cobra vida. Corrección de color, diseño sonoro y efectos visuales (VFX) que desafían la realidad.
+</p>
+</div>
+</div>
+<!-- Equipment Rental (Wide Horizontal) -->
+<div class="md:col-span-8 group relative bg-surface-container-lowest overflow-hidden min-h-[400px] flex flex-col md:flex-row items-stretch border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="w-full md:w-5/12 overflow-hidden relative">
+<img class="w-full h-full object-cover opacity-30 grayscale group-hover:scale-105 group-hover:grayscale-0 transition-all duration-1000" data-alt="Camera lenses and equipment neatly organized in a case" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwPmijFSAosuwf7S9uyDdVEccTTD-jeQtXdm9i6a97z7PVTj3pqn7SoGD1PcQabPc8D1LURpulHhtd72PsLCPn2iEmCOYwgOyvXBOWEkXC95aXyVX4z5uJQlbqxjPyS2jWvUR3pwl8nofrb_HCg3yg2Jp2UGt9l5_sl8sIB-bIrdiGX8wCa3as8JsRVBhOcYQcMUaniyL80qGE0C9K4kAZgkFqhpoMDvo36MkC9QSC3305awdNF6UoydPqJon_ZjoQoqIxfelTJGo"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+</div>
+<div class="w-full md:w-7/12 p-10 flex flex-col justify-center bg-white/50 backdrop-blur-sm">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">inventory_2</span>
+<h3 class="text-3xl font-headline font-black text-on-surface mb-4 uppercase">Renta de Equipo</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+    Acceda a nuestra exclusiva selección de equipos de grado cinematográfico. Desde lentes anamórficos hasta drones de carga pesada.
+</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex items-center gap-3 text-on-surface text-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+    ARRI Alexa 35
+</div>
+<div class="flex items-center gap-3 text-on-surface text-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+    RED V-Raptor
+</div>
+<div class="flex items-center gap-3 text-on-surface text-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+    Lentes Cooke
+</div>
+<div class="flex items-center gap-3 text-on-surface text-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+    Teradek 4K
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section (Impactful Light Layout) -->
+<section class="py-32 px-8 md:px-20 bg-surface-container-high relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary/10"></div>
+<div class="max-w-5xl mx-auto text-center relative z-10">
+<h2 class="text-5xl md:text-7xl font-headline font-black tracking-tighter text-on-surface mb-10 uppercase leading-[0.9]">
+    ¿LISTO PARA CAPTURAR <br/><span class="text-primary italic">TU LEGADO?</span>
+</h2>
+<p class="text-on-surface-variant text-xl max-w-2xl mx-auto mb-14 font-medium leading-relaxed">
+    Contacte a nuestros productores ejecutivos para discutir su próximo proyecto. Ofrecemos presupuestos personalizados adaptados a la escala de su producción.
+</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-8">
+<button class="bg-primary text-on-primary px-12 py-5 rounded-sm font-headline font-black text-lg uppercase tracking-[0.1em] hover:scale-105 transition-all shadow-xl active:scale-95">
+    SOLICITAR COTIZACIÓN
+</button>
+<button class="text-on-surface border-2 border-on-surface px-12 py-5 rounded-sm font-headline font-black text-lg uppercase tracking-[0.1em] hover:bg-on-surface hover:text-background transition-all active:scale-95">
+    Descargar Deck
+</button>
+</div>
+<div class="mt-20 flex justify-center items-center gap-4 text-primary opacity-20">
+<div class="h-[1px] w-24 bg-current"></div>
+<span class="material-symbols-outlined text-4xl">movie</span>
+<div class="h-[1px] w-24 bg-current"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-8 flex flex-col items-center gap-12 bg-background border-t border-outline-variant/30">
+<div class="text-2xl font-black text-primary font-headline uppercase tracking-tighter italic">
+    MÁS AL SUR - DIRECTOR'S CUT
+</div>
+<div class="flex flex-wrap justify-center gap-10 font-inter text-xs font-bold uppercase tracking-[0.2em]">
+<a class="text-on-surface-variant/60 hover:text-primary transition-colors" href="#">Privacidad</a>
+<a class="text-on-surface-variant/60 hover:text-primary transition-colors" href="#">Términos</a>
+<a class="text-on-surface-variant/60 hover:text-primary transition-colors" href="#">Kit de Prensa</a>
+<a class="text-on-surface-variant/60 hover:text-primary transition-colors" href="#">Carreras</a>
+</div>
+<div class="flex gap-8">
+<a class="w-12 h-12 flex items-center justify-center border border-outline-variant/30 rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center border border-outline-variant/30 rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">videocam</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center border border-outline-variant/30 rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">podcasts</span>
+</a>
+</div>
+<div class="text-on-surface-variant/40 text-[9px] uppercase tracking-[0.4em] font-headline">
+    © 2024 MÁS AL SUR - DIRECTOR'S CUT. TODOS LOS DERECHOS RESERVADOS.
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,67 @@
+{
+  "_comment": "Catálogo de servicios del estudio. Agrega o modifica entradas en el array 'services'.",
+  "hero": {
+    "eyebrow": "Nuestras Capacidades",
+    "title": "CREANDO LO",
+    "titleHighlight": "INVISIBLE.",
+    "description": "Desde el desarrollo del guion hasta la distribución global, ofrecemos soluciones de producción integrales para cineastas que exigen una calidad sin concesiones.",
+    "backgroundImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuBmTeOzcLIvVv2oo6M7n7WuFRARvAKd_1GyibjuGwTjM3N0mAemHNPmBVFQoLTIIPVInuCN-78-LWeVcSFRaecoqtX5cBHkSI7xwBO30snHJyMyDLFV5u8FRVEb1ZYg8_9_Vh9cPk0BbNdctUkl8Y5aXYQJv6QCakIv3ZLgucT6ZULjAAF-GdTMMU0t7NXvfNitrJDze9esuz9wMMvHGsVSQ848BUSPZTjDfpOM57OwMWTwfQIbOn6SJ5s9rbbe5ESTH7gv_vDADCs"
+  },
+  "services": [
+    {
+      "id": "pre-produccion",
+      "title": "Pre-producción",
+      "icon": "edit_note",
+      "description": "La base de cada obra maestra. Nos especializamos en pulido de guiones, storyboarding integral, casting de talentos de élite y búsqueda minuciosa de locaciones.",
+      "tags": ["Guionismo", "Casting", "Presupuesto", "Locaciones"],
+      "backgroundImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuCBZAALwJ75XO5c_xpRA_-L0tqtclONIkiE4PXgom-Ir9JBA6MxcNFOXAUbIM3RxxLo5y-iCrGBTWzYr-jpyoDBZSsoKGD3USrqBrmT_CJ9cMnGiOilU_z2v7exdLitPyc1-Bt8yEm5dsL-bigBWykavxfr6_p548rltmUOpp-g9hg3PvSvHgpbbA7aAyj2YL2UyTofNGk7sF8ttwpETecaD5YxaaXA6sDvyZgXxf1GnY2rVE0KqD5U8qjobdSrKmg-lytQ4GcYiRQ",
+      "size": "large",
+      "showLink": false
+    },
+    {
+      "id": "produccion",
+      "title": "Producción",
+      "icon": "videocam",
+      "description": "Ejecución de alto nivel en el set. Nuestros equipos utilizan la última tecnología RED y ARRI para capturar visuales impresionantes.",
+      "tags": [],
+      "backgroundImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuDTnBrrYCQ8FscZPAzoKdNK9474pQWMQVz-n2EREVvLyn_Pc9g0HOpiOs6v3P1zucYcQo98wzikfEaZnhXhVv3NnmXVeUsB27MkcGlFyfDBN3eW5jyPQosucqd1O6Li6Vo6a58QkzTHTLMZBySOA2J0bWUrbVufctClCt1A4nFgElTweMBK97aEZGJle-DXQT26ao9x6fVeg5euLSBG7Y6Pj25IcpQW2VGfkwBrUiz7Ls-LR5pOsu9sCxzeIBQEtXkWZDBPjtn-xm0",
+      "size": "small",
+      "showLink": true,
+      "linkLabel": "Ver casos de estudio",
+      "linkHref": "/peliculas"
+    },
+    {
+      "id": "post-produccion",
+      "title": "Post-producción",
+      "icon": "movie_edit",
+      "description": "Donde la historia cobra vida. Corrección de color, diseño sonoro y efectos visuales (VFX) que desafían la realidad.",
+      "tags": [],
+      "backgroundImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbj5fkhZl_DE4bb2dF1vwjR7HPIy6c7q499ww-uiOo5O1UpwXimhwjoDtAS-8atz3AQyn6WpMUb94NqqSUdXqw_NIkcE7FSQklkIKz_o8dHvQ612FNl5rLYrJvlbSnINYozYbsF5KxZZEx4t4oB4hs_mi173H5gF9sBwFrnn9KDtprkC-e5DvCJaLRPrVvVqosBk20u3oWR-niR-o1pzWEiHqf_4SCEsO07clv6ugUhmVKTqmftQ2CBY6spwKDfVeYeVl2hmBayCM",
+      "size": "medium",
+      "showLink": false
+    },
+    {
+      "id": "renta-equipo",
+      "title": "Renta de Equipo",
+      "icon": "inventory_2",
+      "description": "Acceda a nuestra exclusiva selección de equipos de grado cinematográfico. Desde lentes anamórficos hasta drones de carga pesada.",
+      "tags": [],
+      "equipmentList": ["ARRI Alexa 35", "RED V-Raptor", "Lentes Cooke", "Teradek 4K"],
+      "backgroundImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuDwPmijFSAosuwf7S9uyDdVEccTTD-jeQtXdm9i6a97z7PVTj3pqn7SoGD1PcQabPc8D1LURpulHhtd72PsLCPn2iEmCOYwgOyvXBOWEkXC95aXyVX4z5uJQlbqxjPyS2jWvUR3pwl8nofrb_HCg3yg2Jp2UGt9l5_sl8sIB-bIrdiGX8wCa3as8JsRVBhOcYQcMUaniyL80qGE0C9K4kAZgkFqhpoMDvo36MkC9QSC3305awdNF6UoydPqJon_ZjoQoqIxfelTJGo",
+      "size": "wide",
+      "showLink": false
+    }
+  ],
+  "cta": {
+    "title": "¿LISTO PARA CAPTURAR TU LEGADO?",
+    "description": "Contacte a nuestros productores ejecutivos para discutir su próximo proyecto. Ofrecemos presupuestos personalizados adaptados a la escala de su producción.",
+    "primaryAction": {
+      "label": "SOLICITAR COTIZACIÓN",
+      "href": "/contacto"
+    },
+    "secondaryAction": {
+      "label": "Descargar Deck",
+      "href": "#"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_comment": "Información general del estudio. Modifica estos valores para personalizar el sitio.",
+  "name": "MÁS AL SUR",
+  "tagline": "Productora",
+  "description": "Creando experiencias cinematográficas viscerales a través de la narrativa austral. Unimos la emoción cruda con la maestría técnica de alto nivel.",
+  "logo": {
+    "src": "https://masalsur.cl/wp-content/uploads/2025/06/MOSCA1.300ppp-1-scaled.png",
+    "srcDark": "https://masalsur.cl/wp-content/uploads/2025/06/MOSCA2.300ppp-1-scaled.png",
+    "srcFavicon": "https://masalsur.cl/wp-content/uploads/2025/06/cropped-VARIACION.LOGOFINAL.300ppp-scaled-1-270x270.png",
+    "alt": "Más Al Sur – Productora"
+  },
+  "contact": {
+    "address": "Av. Nueva Providencia 1881, Oficina 1205, Santiago, Chile.",
+    "email": "contacto@masalsur.cl",
+    "talentEmail": "talento@masalsur.cl"
+  },
+  "social": [
+    { "label": "Web", "icon": "public", "href": "#" },
+    { "label": "Video", "icon": "videocam", "href": "#" },
+    { "label": "Podcast", "icon": "podcasts", "href": "#" }
+  ],
+  "footer": {
+    "links": [
+      { "label": "Transparencia y Obligaciones Legales", "href": "/convenio" }
+    ],
+    "copyright": "© 2026 MÁS AL SUR – Productora. Todos los derechos reservados."
+  },
+  "seo": {
+    "defaultTitle": "MÁS AL SUR - Productora",
+    "titleTemplate": "%s | MÁS AL SUR",
+    "defaultDescription": "Productora cinematográfica especializada en narrativa austral. Pre-producción, producción y post-producción con la más alta calidad técnica.",
+    "siteUrl": "https://masalsur.cl",
+    "ogImage": "https://masalsur.cl/wp-content/uploads/2025/06/MOSCA1.300ppp-1-scaled.png"
+  }
+}

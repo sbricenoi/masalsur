@@ -1,3 +1,14 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    /*
+     * Las imágenes actuales provienen de URLs externas de Google CDN.
+     * Se mantiene como advertencia (no error) para facilitar la migración
+     * progresiva a next/image. En producción se recomienda migrar.
+     */
+    "@next/next/no-img-element": "warn",
+    /* El link de Material Symbols se incluye vía CSS @import */
+    "@next/next/no-page-custom-font": "off",
+    "@next/next/google-font-display": "off"
+  }
 }

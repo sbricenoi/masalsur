@@ -1,0 +1,59 @@
+{
+  "_comment": "Catálogo de películas. Solo largometrajes.",
+  "films": [
+    {
+      "id": "rey-del-ring",
+      "title": "REY DEL RING",
+      "year": "2025",
+      "genre": "Drama · Deportes",
+      "category": "Largometrajes",
+      "badge": "Estreno 2 Octubre",
+      "featured": true,
+      "isFeaturedHero": true,
+      "poster": "/posters/portada-rey-del-ring.png",
+      "description": "Una película de Rodrigo Sepúlveda Urzúa. Inspirado en una historia real de boxeo y amor en Nueva York.",
+      "releaseDate": "02 de Octubre",
+      "offset": false,
+      "detail": {
+        "synopsis": [
+          "Inspirada en una historia real de boxeo y amor en Nueva York, la película sigue a un boxeador chileno que cruza el mundo para cumplir su sueño.",
+          "Con una puesta en escena visceral y un elenco de primer nivel, REY DEL RING es una historia de redención, sacrificio y la búsqueda de identidad."
+        ],
+        "quote": "\"Una historia real de boxeo y amor en Nueva York.\"",
+        "techSpecs": [
+          "Dirección: Rodrigo Sepúlveda Urzúa",
+          "Producción: Max Gandarillas",
+          "Fotografía: Eduardo Runster",
+          "Música: Carlos Cabezas",
+          "CNTV · Star+ · Cinecolar · Bourke"
+        ],
+        "cast": [
+          { "name": "Benjamín Vicuña", "role": "Protagonista", "image": "/posters/portada-rey-del-ring.png", "featured": true },
+          { "name": "Marko Zaror", "role": "Actor Estelar", "image": "/posters/portada-rey-del-ring.png", "featured": false },
+          { "name": "Fiorella Bottaioli", "role": "Actriz Principal", "image": "/posters/portada-rey-del-ring.png", "featured": false }
+        ],
+        "crew": {
+          "director": "Rodrigo Sepúlveda Urzúa",
+          "cinematography": "Eduardo Runster",
+          "location": "Nueva York",
+          "studio": "Más Al Sur"
+        }
+      }
+    },
+    {
+      "id": "renata",
+      "title": "RENATA",
+      "year": "2024",
+      "genre": "Drama · Familia",
+      "category": "Largometrajes",
+      "badge": null,
+      "featured": true,
+      "poster": "/posters/portada-renata.png",
+      "description": "La verdadera historia de cómo elegí a mis padres. Un relato íntimo sobre la identidad, el amor y el origen.",
+      "releaseDate": "2024",
+      "offset": false
+    }
+  ],
+  "categories": ["Largometrajes"],
+  "sortOptions": ["Últimos Estrenos", "Premios"]
+}

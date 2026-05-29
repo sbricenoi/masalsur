@@ -1,0 +1,32 @@
+{
+  "_comment": "Datos específicos de la página de inicio.",
+  "hero": {
+    "eyebrow": "Productora",
+    "title": "MÁS AL",
+    "titleHighlight": "SUR",
+    "description": "Donde las historias cobran vida. Narrativa austral con la más alta calidad cinematográfica.",
+    "backgroundImage": "/posters/portada-rey-del-ring.png",
+    "reelLabel": "VER REEL",
+    "portfolioLabel": "NUESTRO PORTAFOLIO"
+  },
+  "featured": {
+    "eyebrow": "Selección",
+    "title": "Producciones Destacadas",
+    "subtitle": "Proyectos premiados creados con precisión y visión cinematográfica.",
+    "extraImages": [
+      {
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuATjqhS78oEMTx0Dlh0-aLfEF9wNwltCCv5WaywkWKmxLtvsLxLAuiFLzelyUvaS_lrUawdpKJpJ8selsNM5CR5ep-8EX-5jFwwPJcEnGEV5hjZFw0acY8lCpD8MwVW1w9-b0DHMYHWUvpluZgMk04898D8WkoRgJgyPzavMBKi8JVwjf2LSmPMIrcECl1485antvP8l_8vBk9ddnp8n4WprE-i2B7vMSVBDqeRp1FxEnMQatzYR7ZJk4Q9xfMJnAJXUu4ldc2NKC0",
+        "alt": "Producción 3"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCYcbK_cegj1dhf_7y6JtqblfG_Yy5P_hQSTwMJLOsg3F3w-pWFAyYpy7s4CXwmXr_EsWeTAycd1JJRxpa1MK0qDbtPDoqQ721C2HH3TatJn7Mygxvtw5OpZMOaPhW-cLtfLraD3qgKtM0a1VACyxyw5HZqji7njN1Y0Ka4F01Z62GZ6IbI06dnYMzzsifU_7Mw0st0CvidSqllpzWd5tJnBAShyGNYIaOV-f8G7k1F0mABInfLEeS3TFBq6RRgqR6_e0ZEQowRO0M",
+        "alt": "Producción 4"
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "¿LISTO PARA RODAR?",
+    "placeholder": "TU CORREO ELECTRÓNICO",
+    "ctaLabel": "SUSCRIBIRSE"
+  }
+}
