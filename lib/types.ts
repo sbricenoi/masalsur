@@ -97,12 +97,12 @@ export interface SiteSEO {
 export interface Serie {
   id: string;
   title: string;
-  year: string;
-  seasons: string;
-  episodes: number;
+  year: string | null;
+  seasons: string | null;
+  episodes: number | null;
   genre: string;
   category: string;
-  status: "emitted" | "in-production";
+  status?: string;
   badge: string | null;
   featured: boolean;
   poster: string;

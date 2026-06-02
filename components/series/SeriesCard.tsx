@@ -38,9 +38,11 @@ export default function SeriesCard({ serie }: Props) {
             play_circle
           </span>
         </div>
-        <p className="text-on-surface-variant text-xs font-body uppercase mt-1">
-          {serie.year} • {serie.seasons}
-        </p>
+        {(serie.year || serie.seasons) && (
+          <p className="text-on-surface-variant text-xs font-body uppercase mt-1">
+            {[serie.year, serie.seasons].filter(Boolean).join(" • ")}
+          </p>
+        )}
       </div>
     </Link>
   );

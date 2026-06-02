@@ -10,6 +10,8 @@ interface Props {
 }
 
 export default function UpcomingSeries({ upcoming }: Props) {
+  if (!upcoming.length) return null;
+
   return (
     <section className="py-32 bg-surface-container-low">
       {/* Encabezado */}

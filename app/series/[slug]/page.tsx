@@ -1,8 +1,5 @@
 /**
- * app/series/[slug]/page.tsx
- *
- * Página de detalle de una serie individual.
- * Ruta dinámica: /series/[slug]
+ * app/series/[slug]/page.tsx — Detalle de serie individual.
  */
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +7,8 @@ import { notFound } from "next/navigation";
 import TechBanner from "@/components/peliculas/TechBanner";
 import seriesData from "@/data/series.json";
 import siteData from "@/data/site.json";
-import type { Serie } from "@/lib/types";
+
+type SerieData = (typeof seriesData.series)[number] & { status?: string };
 
 export function generateStaticParams() {
   return seriesData.series.map((s) => ({ slug: s.id }));
@@ -21,50 +19,50 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const serie = seriesData.series.find((s) => s.id === params.slug) as
-    | Serie
-    | undefined;
+  const serie = seriesData.series.find((s) => s.id === params.slug);
   if (!serie) return { title: "Serie no encontrada" };
   return {
     title: `${serie.title} | ${siteData.name}`,
     description: serie.description,
     openGraph: {
-      title: `${serie.title} | ${siteData.name} Series`,
+      title: `${serie.title} | ${siteData.name}`,
       description: serie.description,
       images: [{ url: serie.poster }],
     },
   };
 }
 
-export default function SerieDetailPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const serie = seriesData.series.find((s) => s.id === params.slug) as
-    | Serie
-    | undefined;
+export default function SerieDetailPage({ params }: { params: { slug: string } }) {
+  const serie = seriesData.series.find((s) => s.id === params.slug) as SerieData | undefined;
   if (!serie) notFound();
 
-  const techSpecs = [
-    "Formato Serie Original",
-    `${serie.episodes} Episodios`,
-    serie.seasons,
-    `${serie.genre} · ${serie.year}`,
+  const isReleased = (serie as SerieData).status === "Released";
+
+  /* Specs solo con valores reales */
+  const techSpecs: string[] = [
     "Producido por MÁS AL SUR",
-    "Dolby Atmos · 4K HDR",
-  ];
+    isReleased ? "Estrenada en TV abierta" : "En Producción",
+    serie.episodes != null ? `${serie.episodes} Episodios` : null,
+    serie.seasons ?? null,
+    serie.genre,
+    serie.year ? `${serie.year}` : null,
+  ].filter((s): s is string => !!s);
+
+  /* Ficha: solo filas con datos reales */
+  const fichaRows = [
+    { label: "Género", value: serie.genre },
+    serie.year ? { label: "Año", value: String(serie.year) } : null,
+    serie.seasons ? { label: "Temporadas", value: serie.seasons } : null,
+    serie.episodes != null ? { label: "Episodios", value: `${serie.episodes} episodios` } : null,
+    isReleased ? { label: "Exhibición", value: "TV abierta · Chile" } : { label: "Estado", value: "En Desarrollo" },
+  ].filter(Boolean) as { label: string; value: string }[];
 
   return (
     <div className="pt-20">
       {/* Hero */}
       <section className="relative h-[80vh] w-full overflow-hidden flex items-end">
         <div className="absolute inset-0">
-          <img
-            src={serie.poster}
-            alt={serie.title}
-            className="w-full h-full object-cover"
-          />
+          <img src={serie.poster} alt={serie.title} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-background/40 via-transparent to-transparent" />
         </div>
@@ -82,18 +80,16 @@ export default function SerieDetailPage({
           <h1 className="text-6xl md:text-9xl font-headline font-black tracking-tighter text-on-surface uppercase leading-none mb-8">
             {serie.title}
           </h1>
-          <div className="flex gap-6">
-            <Link
-              href="/series"
-              className="border border-outline text-on-surface px-8 py-4 font-headline font-black uppercase text-sm rounded-sm hover:bg-on-surface/5 transition-all"
-            >
-              Todas las Series
-            </Link>
-          </div>
+          <Link
+            href="/series"
+            className="border border-outline text-on-surface px-8 py-4 font-headline font-black uppercase text-sm rounded-sm hover:bg-on-surface/5 transition-all"
+          >
+            Todas las Series
+          </Link>
         </div>
       </section>
 
-      <TechBanner specs={techSpecs} />
+      {techSpecs.length > 0 && <TechBanner specs={techSpecs} />}
 
       {/* Contenido */}
       <section className="py-24 px-8 md:px-20 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
@@ -104,15 +100,11 @@ export default function SerieDetailPage({
           </h2>
           <div className="space-y-6 text-on-surface-variant text-lg leading-relaxed">
             <p>{serie.description}</p>
-            <p className="font-light italic border-l-2 border-primary pl-6 py-2 text-primary">
-              &ldquo;Una producción que define el nuevo estándar del drama en
-              serie latinoamericano.&rdquo;
-            </p>
-            <p>
-              Con {serie.episodes} episodios y una narrativa que no concede nada
-              a la superficialidad, {serie.title} es una apuesta radical por la
-              profundidad y el carácter.
-            </p>
+            {serie.episodes != null && (
+              <p>
+                {serie.episodes} episodios · {serie.genre}
+              </p>
+            )}
           </div>
         </div>
 
@@ -122,20 +114,12 @@ export default function SerieDetailPage({
             Ficha de Serie
           </h2>
           <div className="space-y-8">
-            {[
-              { label: "Género", value: serie.genre },
-              { label: "Año", value: serie.year },
-              { label: "Temporadas", value: serie.seasons },
-              { label: "Episodios", value: `${serie.episodes} episodios` },
-              { label: "Formato", value: "4K HDR · Dolby Atmos" },
-            ].map(({ label, value }) => (
+            {fichaRows.map(({ label, value }) => (
               <div key={label} className="space-y-2">
                 <p className="text-[10px] font-bold tracking-[0.4em] text-on-surface-variant/60 uppercase">
                   {label}
                 </p>
-                <p className="text-xl font-headline font-bold text-on-surface">
-                  {value}
-                </p>
+                <p className="text-xl font-headline font-bold text-on-surface">{value}</p>
               </div>
             ))}
           </div>

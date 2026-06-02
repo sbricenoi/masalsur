@@ -40,8 +40,7 @@ export default function FilmCard({ film }: Props) {
           </span>
         </div>
         <p className="text-on-surface-variant text-xs font-body uppercase mt-1">
-          {film.year}
-          {film.badge ? ` • ${film.badge}` : ` • ${film.category}`}
+          {[film.year, film.status ?? film.category].filter(Boolean).join(" · ")}
         </p>
       </div>
     </Link>
