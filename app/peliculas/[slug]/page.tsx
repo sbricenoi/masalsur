@@ -83,21 +83,14 @@ export default function FilmDetailPage({ params }: Props) {
             <span className="text-primary italic">COLABORAR?</span>
           </h2>
           <p className="text-on-surface-variant text-xl mb-12 font-light">
-            Únete a nosotros en el siguiente capítulo de la narración
-            cinematográfica.
+            Cuéntanos en qué etapa está tu proyecto y cómo podemos colaborar.
           </p>
-          <div className="flex flex-col md:flex-row gap-6 justify-center">
+          <div className="flex justify-center">
             <Link
               href="/contacto"
-              className="bg-primary text-on-primary px-10 py-5 rounded-sm font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary-container hover:text-on-primary-container transition-all shadow-lg"
+              className="inline-flex items-center gap-3 bg-primary text-on-primary px-10 py-5 rounded-sm font-headline font-bold uppercase tracking-widest text-sm hover:opacity-90 transition-all shadow-lg"
             >
-              Enviar Portafolio
-            </Link>
-            <Link
-              href="/contacto"
-              className="border border-outline text-on-surface px-10 py-5 rounded-sm font-headline font-bold uppercase tracking-widest text-sm hover:bg-surface-container transition-all"
-            >
-              Relación con Inversores
+              Contactar <span className="material-symbols-outlined">arrow_forward</span>
             </Link>
           </div>
         </div>

@@ -83,17 +83,6 @@ export default function SerieDetailPage({
             {serie.title}
           </h1>
           <div className="flex gap-6">
-            <button className="bg-primary text-on-primary px-8 py-4 font-headline font-black uppercase text-sm rounded-sm hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-95">
-              <span className="inline-flex items-center gap-2">
-                <span
-                  className="material-symbols-outlined"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  play_arrow
-                </span>
-                Ver Primer Episodio
-              </span>
-            </button>
             <Link
               href="/series"
               className="border border-outline text-on-surface px-8 py-4 font-headline font-black uppercase text-sm rounded-sm hover:bg-on-surface/5 transition-all"

@@ -55,22 +55,22 @@ export default function FilmDetailHero({ film }: Props) {
           {film.description}
         </p>
 
-        {/* CTAs */}
-        <div className="flex flex-wrap gap-4">
-          <button className="group flex items-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-sm font-headline font-bold tracking-widest uppercase transition-all hover:bg-on-primary-container">
-            <span
-              className="material-symbols-outlined"
-              style={{ fontVariationSettings: "'FILL' 1" }}
+        {/* CTA: solo si hay trailerUrl */}
+        {film.trailerUrl && (
+          <div className="flex flex-wrap gap-4">
+            <a
+              href={film.trailerUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-sm font-headline font-bold tracking-widest uppercase transition-all hover:bg-on-primary-container"
             >
-              play_arrow
-            </span>
-            Ver Trailer
-          </button>
-          <button className="group flex items-center gap-3 border border-outline px-8 py-4 rounded-sm font-headline font-bold tracking-widest uppercase transition-all hover:bg-surface-container">
-            <span className="material-symbols-outlined">add</span>
-            Archivos del Proyecto
-          </button>
-        </div>
+              <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
+                play_arrow
+              </span>
+              Ver Teaser
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

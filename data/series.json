@@ -45,21 +45,6 @@
       "description": "Thriller sobre el poder económico y la ambición en el corazón financiero de Santiago.",
       "upcoming": false
     },
-    {
-      "id": "la-inglesa-serie",
-      "title": "LA INGLESA & EL BANDOLERO",
-      "year": null,
-      "seasons": null,
-      "episodes": null,
-      "genre": "Western",
-      "category": "Drama",
-      "status": "In Development",
-      "badge": "In Development",
-      "featured": false,
-      "poster": "/posters/portada-inglesa-bandolero.png",
-      "description": "En una frontera sin ley, el poder pertenece a quien es capaz de tomarlo.",
-      "upcoming": false
-    }
   ],
 
   "upcoming": [],

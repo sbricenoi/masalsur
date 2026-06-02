@@ -37,12 +37,6 @@ export default function ServiciosCTA({ cta }: Props) {
           >
             {cta.primaryAction.label}
           </Link>
-          <Link
-            href={cta.secondaryAction.href}
-            className="text-on-surface border-2 border-on-surface px-12 py-5 rounded-sm font-headline font-black text-lg uppercase tracking-[0.1em] hover:bg-on-surface hover:text-background transition-all active:scale-95"
-          >
-            {cta.secondaryAction.label}
-          </Link>
         </div>
 
         {/* Decoración */}
