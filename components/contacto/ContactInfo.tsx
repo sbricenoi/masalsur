@@ -34,12 +34,27 @@ export default function ContactInfo() {
         {/* Comunicaciones */}
         <div className="space-y-4">
           <h3 className="text-primary font-headline font-bold text-lg uppercase tracking-wider">
-            Comunicaciones
+            Contacto directo
           </h3>
-          <div className="space-y-2">
-            <p className="text-on-surface/80 font-body text-xl">
-              {siteData.contact.email}
-            </p>
+          <div className="space-y-3">
+            <div>
+              <p className="text-on-surface font-bold text-lg">Max Gandarillas</p>
+              <p className="text-on-surface-variant text-sm uppercase tracking-wider">Producer</p>
+              <a
+                href="mailto:max@masalsur.cl"
+                className="text-primary hover:underline text-lg font-body"
+              >
+                max@masalsur.cl
+              </a>
+            </div>
+            <div className="pt-2 border-t border-outline-variant/30">
+              <a
+                href={`mailto:${siteData.contact.email}`}
+                className="text-on-surface/70 hover:text-primary transition-colors text-base font-body"
+              >
+                {siteData.contact.email}
+              </a>
+            </div>
           </div>
         </div>
 

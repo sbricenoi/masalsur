@@ -1,5 +1,5 @@
 {
-  "_comment": "Catálogo de películas. Solo largometrajes.",
+  "_comment": "Catálogo de películas. status: Released | In Development | In Financing",
   "films": [
     {
       "id": "rey-del-ring",
@@ -7,17 +7,24 @@
       "year": "2025",
       "genre": "Drama · Deportes",
       "category": "Largometrajes",
-      "badge": "Estreno 2 Octubre",
+      "status": "Released",
+      "badge": "Estrenada en cines · Octubre 2025",
       "featured": true,
       "isFeaturedHero": true,
       "poster": "/posters/portada-rey-del-ring.png",
-      "description": "Una película de Rodrigo Sepúlveda Urzúa. Inspirado en una historia real de boxeo y amor en Nueva York.",
-      "releaseDate": "02 de Octubre",
+      "description": "Inspirada en la historia de un chileno que desafió al mejor boxeador de la historia en Nueva York en 1940.",
+      "releaseDate": "Octubre 2025",
       "offset": false,
+      "accolades": [
+        "Selección Oficial · Festival Internacional de Cine de Mar del Plata 2025",
+        "Ahora en Disney+ Latin America",
+        "Distribución en Italia · Plaion Pictures"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=ZE_eylyoVBU",
       "detail": {
         "synopsis": [
-          "Inspirada en una historia real de boxeo y amor en Nueva York, la película sigue a un boxeador chileno que cruza el mundo para cumplir su sueño.",
-          "Con una puesta en escena visceral y un elenco de primer nivel, REY DEL RING es una historia de redención, sacrificio y la búsqueda de identidad."
+          "Inspirada en la historia real de Arturo Godoy, el boxeador chileno que dos veces peleó con Joe Louis —el mejor del mundo— en Nueva York en 1940.",
+          "Una historia de coraje, identidad y la búsqueda de gloria en el lugar más improbable del mundo."
         ],
         "quote": "\"Una historia real de boxeo y amor en Nueva York.\"",
         "techSpecs": [
@@ -25,7 +32,7 @@
           "Producción: Max Gandarillas",
           "Fotografía: Eduardo Runster",
           "Música: Carlos Cabezas",
-          "CNTV · Star+ · Cinecolar · Bourke"
+          "CNTV · Disney+ · Plaion Pictures"
         ],
         "cast": [
           { "name": "Benjamín Vicuña", "role": "Protagonista", "image": "/posters/portada-rey-del-ring.png", "featured": true },
@@ -35,7 +42,7 @@
         "crew": {
           "director": "Rodrigo Sepúlveda Urzúa",
           "cinematography": "Eduardo Runster",
-          "location": "Nueva York",
+          "location": "Chile · Nueva York",
           "studio": "Más Al Sur"
         }
       }
@@ -43,14 +50,29 @@
     {
       "id": "renata",
       "title": "RENATA",
-      "year": "2024",
+      "year": null,
       "genre": "Drama · Familia",
       "category": "Largometrajes",
-      "badge": null,
+      "status": "In Development",
+      "badge": "In Development",
       "featured": true,
       "poster": "/posters/portada-renata.png",
-      "description": "La verdadera historia de cómo elegí a mis padres. Un relato íntimo sobre la identidad, el amor y el origen.",
-      "releaseDate": "2024",
+      "description": "La verdadera historia de cómo elegí a mis padres.",
+      "releaseDate": null,
+      "offset": false
+    },
+    {
+      "id": "la-inglesa-y-el-bandolero",
+      "title": "LA INGLESA & EL BANDOLERO",
+      "year": null,
+      "genre": "Western · Aventura",
+      "category": "Largometrajes",
+      "status": "In Development",
+      "badge": "In Development",
+      "featured": true,
+      "poster": "/posters/portada-inglesa-bandolero.png",
+      "description": "En una frontera sin ley, el poder pertenece a quien es capaz de tomarlo.",
+      "releaseDate": null,
       "offset": false
     }
   ],

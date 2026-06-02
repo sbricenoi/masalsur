@@ -44,7 +44,7 @@ export default function ContactForm() {
     <div className="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-xl relative overflow-hidden border border-outline-variant/30 shadow-sm">
       <div className="cinematic-gradient absolute inset-0 pointer-events-none" />
       <h2 className="text-3xl font-headline font-extrabold tracking-tight mb-8 text-on-surface uppercase">
-        Guioniza tu visión
+        Cuéntanos más sobre tu proyecto
       </h2>
 
       {status === "success" ? (

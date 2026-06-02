@@ -15,9 +15,8 @@
     "talentEmail": "talento@masalsur.cl"
   },
   "social": [
-    { "label": "Web", "icon": "public", "href": "#" },
-    { "label": "Video", "icon": "videocam", "href": "#" },
-    { "label": "Podcast", "icon": "podcasts", "href": "#" }
+    { "label": "Instagram", "icon": "camera", "href": "https://www.instagram.com/maxganda83" },
+    { "label": "Web", "icon": "public", "href": "https://masalsur.cl" }
   ],
   "footer": {
     "links": [

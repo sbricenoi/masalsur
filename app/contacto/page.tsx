@@ -30,11 +30,11 @@ export default function ContactoPage() {
         </div>
         <div className="relative z-10 max-w-6xl w-full">
           <span className="text-primary font-headline font-bold tracking-[0.2em] text-sm mb-4 block uppercase">
-            The Director&apos;s Office
+            MÁS AL SUR
           </span>
           <h1 className="text-6xl md:text-8xl font-black font-headline tracking-tighter text-on-surface uppercase leading-[0.9] max-w-4xl">
-            Hablemos de tu <br />
-            <span className="text-primary italic">próximo proyecto</span>
+            Empecemos un <br />
+            <span className="text-primary italic">proyecto</span>
           </h1>
         </div>
       </section>

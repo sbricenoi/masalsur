@@ -32,19 +32,19 @@ export interface FilmDetail {
 export interface Film {
   id: string;
   title: string;
-  year: string;
+  year: string | null;
   genre: string;
   category: string;
+  status?: "Released" | "In Development" | "In Financing";
   badge: string | null;
   featured: boolean;
   isFeaturedHero?: boolean;
-  isFeaturedDirectors?: boolean;
-  heroLabel?: string;
-  heroSubtitle?: string;
   poster: string;
   description: string;
-  releaseDate: string;
+  releaseDate: string | null;
   offset: boolean;
+  accolades?: string[];
+  trailerUrl?: string;
   detail?: FilmDetail;
 }
 

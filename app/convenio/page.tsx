@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 /* ─── Datos de la sección ─── */
 
 const proyecto = {
-  nombre: "Serie Agáchate Godoy",
+  nombre: "Serie Agáchate Godoy / Bailando en el Ring",
   fondo: "Fondo CNTV 2021",
   montoAdjudicado: "$311.917.655",
   convenios: [
