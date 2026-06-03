@@ -31,7 +31,7 @@ export default function HomePage() {
           <img
             src={heroFilm.poster}
             alt={heroFilm.title}
-            className="w-full h-full object-cover brightness-75"
+            className="w-full h-full object-cover object-top brightness-75"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-transparent" />
