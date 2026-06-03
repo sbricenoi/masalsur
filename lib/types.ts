@@ -108,6 +108,8 @@ export interface Serie {
   poster: string;
   description: string;
   upcoming: boolean;
+  trailerUrl?: string;
+  backer?: string;
 }
 
 export interface UpcomingSerie {

@@ -1,21 +1,17 @@
 /**
- * app/series/page.tsx
- *
- * Página de listado de series originales.
+ * app/series/page.tsx — Listado de series originales.
  */
 import type { Metadata } from "next";
 import SeriesHero from "@/components/series/SeriesHero";
 import SeriesGrid from "@/components/series/SeriesGrid";
 import UpcomingSeries from "@/components/series/UpcomingSeries";
-import SeriesCTA from "@/components/series/SeriesCTA";
 import seriesData from "@/data/series.json";
 import siteData from "@/data/site.json";
 import { Serie, UpcomingSerie } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: `Series | ${siteData.name}`,
-  description:
-    "Producciones originales de largo aliento de MÁS AL SUR. Narrativas australes con profundidad cinematográfica.",
+  description: "Series originales de MÁS AL SUR.",
 };
 
 export default function SeriesPage() {
@@ -29,7 +25,6 @@ export default function SeriesPage() {
         categories={seriesData.categories}
       />
       <UpcomingSeries upcoming={seriesData.upcoming as UpcomingSerie[]} />
-      <SeriesCTA cta={seriesData.cta} />
     </>
   );
 }

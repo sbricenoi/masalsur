@@ -67,7 +67,7 @@ export default function FilmDetailHero({ film }: Props) {
               <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
                 play_arrow
               </span>
-              Ver Teaser
+              Ver Trailer
             </a>
           </div>
         )}

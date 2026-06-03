@@ -80,7 +80,7 @@ export default function HomePage() {
               <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
                 play_arrow
               </span>
-              Ver Teaser
+              Ver Trailer
             </a>
           )}
         </div>
@@ -91,7 +91,7 @@ export default function HomePage() {
         <div className="max-w-3xl">
           <p className="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-4">Quiénes somos</p>
           <p className="text-on-surface text-xl md:text-2xl font-light leading-relaxed">
-            MAS al Sur es una productora chilena dedicada al desarrollo y producción de largometrajes y series inspiradas en{" "}
+            Más al Sur es una productora chilena dedicada al desarrollo y producción de largometrajes y series inspiradas en{" "}
             <strong className="font-bold text-on-surface">poderosas historias latinoamericanas con proyección internacional.</strong>
           </p>
         </div>
@@ -112,32 +112,39 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
             {films.map((film) => (
-              <Link key={film.id} href={`/peliculas/${film.id}`} className="group block">
-                <div className="relative overflow-hidden rounded-sm aspect-video poster-frame mb-5 bg-surface-container">
-                  <img
-                    src={film.poster}
-                    alt={film.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  {/* Status badge */}
-                  <span className={`absolute top-3 left-3 px-2.5 py-1 text-[10px] font-black tracking-widest uppercase rounded-sm ${STATUS_COLORS[film.status ?? "In Development"]}`}>
-                    {STATUS_LABELS[film.status ?? "In Development"]}
-                  </span>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="w-14 h-14 rounded-full bg-primary/80 backdrop-blur-sm flex items-center justify-center">
-                      <span className="material-symbols-outlined text-on-primary text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>play_arrow</span>
-                    </div>
+              <div key={film.id} className="group block">
+                <Link href={`/peliculas/${film.id}`} className="block">
+                  <div className="relative overflow-hidden rounded-sm aspect-video poster-frame mb-5 bg-surface-container">
+                    <img
+                      src={film.poster}
+                      alt={film.title}
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                    <span className={`absolute top-3 left-3 px-2.5 py-1 text-[10px] font-black tracking-widest uppercase rounded-sm ${STATUS_COLORS[film.status ?? "In Development"]}`}>
+                      {STATUS_LABELS[film.status ?? "In Development"]}
+                    </span>
                   </div>
-                </div>
-                <h3 className="font-headline font-black text-xl uppercase tracking-tight text-on-surface group-hover:text-primary transition-colors mb-1">
-                  {film.title}
-                </h3>
-                <p className="text-on-surface-variant text-sm leading-relaxed">{film.description}</p>
-                <p className="text-on-surface-variant/50 text-xs uppercase tracking-widest mt-2 font-bold">
-                  {film.year ? `${film.year} · ` : ""}{film.genre}
-                </p>
-              </Link>
+                  <h3 className="font-headline font-black text-xl uppercase tracking-tight text-on-surface group-hover:text-primary transition-colors mb-1">
+                    {film.title}
+                  </h3>
+                  <p className="text-on-surface-variant text-sm leading-relaxed">{film.description}</p>
+                  <p className="text-on-surface-variant/50 text-xs uppercase tracking-widest mt-2 font-bold">
+                    {film.year ? `${film.year} · ` : ""}{film.genre}
+                  </p>
+                </Link>
+                {film.trailerUrl && (
+                  <a
+                    href={film.trailerUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-3 text-primary text-xs font-bold uppercase tracking-widest hover:underline"
+                  >
+                    <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>play_arrow</span>
+                    Ver Trailer
+                  </a>
+                )}
+              </div>
             ))}
           </div>
         </div>
@@ -161,38 +168,46 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
             {series.map((serie) => (
-              <Link key={serie.id} href={`/series/${serie.id}`} className="group block">
-                <div className="relative overflow-hidden rounded-sm aspect-video poster-frame mb-5 bg-surface-container">
-                  <img
-                    src={serie.poster}
-                    alt={serie.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <span className={`absolute top-3 left-3 px-2.5 py-1 text-[10px] font-black tracking-widest uppercase rounded-sm ${STATUS_COLORS[serie.status ?? "In Development"]}`}>
-                    {STATUS_LABELS[serie.status ?? "In Development"]}
-                  </span>
-                  {serie.backer && (
-                    <span className="absolute top-3 right-3 px-2.5 py-1 bg-black/50 text-white text-[10px] font-bold tracking-widest uppercase rounded-sm backdrop-blur-sm">
-                      {serie.backer}
+              <div key={serie.id} className="group">
+                <Link href={`/series/${serie.id}`} className="block">
+                  <div className="relative overflow-hidden rounded-sm aspect-video poster-frame mb-5 bg-surface-container">
+                    <img
+                      src={serie.poster}
+                      alt={serie.title}
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                    <span className={`absolute top-3 left-3 px-2.5 py-1 text-[10px] font-black tracking-widest uppercase rounded-sm ${STATUS_COLORS[serie.status ?? "In Development"]}`}>
+                      {STATUS_LABELS[serie.status ?? "In Development"]}
                     </span>
-                  )}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="w-14 h-14 rounded-full bg-primary/80 backdrop-blur-sm flex items-center justify-center">
-                      <span className="material-symbols-outlined text-on-primary text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>play_arrow</span>
-                    </div>
+                    {serie.backer && (
+                      <span className="absolute top-3 right-3 px-2.5 py-1 bg-black/50 text-white text-[10px] font-bold tracking-widest uppercase rounded-sm backdrop-blur-sm">
+                        {serie.backer}
+                      </span>
+                    )}
                   </div>
-                </div>
-                <h3 className="font-headline font-black text-xl uppercase tracking-tight text-on-surface group-hover:text-primary transition-colors mb-1">
-                  {serie.title}
-                </h3>
-                <p className="text-on-surface-variant text-sm leading-relaxed">{serie.description}</p>
-                {serie.episodes && (
-                  <p className="text-on-surface-variant/50 text-xs uppercase tracking-widest mt-2 font-bold">
-                    {serie.year ? `${serie.year} · ` : ""}{serie.episodes} episodios
-                  </p>
+                  <h3 className="font-headline font-black text-xl uppercase tracking-tight text-on-surface group-hover:text-primary transition-colors mb-1">
+                    {serie.title}
+                  </h3>
+                  <p className="text-on-surface-variant text-sm leading-relaxed">{serie.description}</p>
+                  {serie.episodes && (
+                    <p className="text-on-surface-variant/50 text-xs uppercase tracking-widest mt-2 font-bold">
+                      {serie.year ? `${serie.year} · ` : ""}{serie.episodes} episodios
+                    </p>
+                  )}
+                </Link>
+                {serie.trailerUrl && (
+                  <a
+                    href={serie.trailerUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-3 text-primary text-xs font-bold uppercase tracking-widest hover:underline"
+                  >
+                    <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>play_arrow</span>
+                    Ver Trailer
+                  </a>
                 )}
-              </Link>
+              </div>
             ))}
           </div>
         </div>

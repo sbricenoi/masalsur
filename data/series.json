@@ -20,7 +20,7 @@
       "year": "2026",
       "seasons": "3 episodios",
       "episodes": 3,
-      "genre": "Drama · Documental",
+      "genre": "Dramedy · Documental",
       "category": "Drama",
       "status": "Released",
       "badge": "Estrenada TV abierta · Mayo 2026",
@@ -28,7 +28,8 @@
       "poster": "/posters/portada-bailando-en-el-ring.png",
       "description": "La versión seriada de la extraordinaria historia de Arturo Godoy. Ficción complementada con entrevistas inéditas, archivos históricos y la mirada de periodistas, escritores y expertos del mundo del boxeo.",
       "upcoming": false,
-      "backer": "CNTV"
+      "backer": "CNTV",
+      "trailerUrl": "https://vimeo.com/1154501430"
     },
     {
       "id": "sanhattan",
@@ -36,13 +37,28 @@
       "year": null,
       "seasons": null,
       "episodes": null,
-      "genre": "Thriller",
+      "genre": "Thriller Corporativo",
       "category": "Thriller",
       "status": "In Development",
       "badge": "In Development",
       "featured": true,
       "poster": "/posters/portada-sanhattan.png",
       "description": "Thriller sobre el poder económico y la ambición en el corazón financiero de Santiago.",
+      "upcoming": false
+    },
+    {
+      "id": "la-inglesa-y-el-bandolero",
+      "title": "LA INGLESA & EL BANDOLERO",
+      "year": null,
+      "seasons": null,
+      "episodes": null,
+      "genre": "Western",
+      "category": "Drama",
+      "status": "In Development",
+      "badge": "In Development",
+      "featured": false,
+      "poster": "/posters/portada-inglesa-bandolero.png",
+      "description": "En una frontera sin ley, el poder pertenece a quien es capaz de tomarlo.",
       "upcoming": false
     }
   ],

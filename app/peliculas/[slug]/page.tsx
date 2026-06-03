@@ -71,7 +71,7 @@ export default function FilmDetailPage({ params }: Props) {
                       </span>
                     </div>
                     <p className="mt-6 font-headline font-bold text-xl tracking-[0.2em] uppercase text-on-surface drop-shadow-md">
-                      Ver Teaser
+                      Ver Trailer
                     </p>
                   </div>
                 </a>
