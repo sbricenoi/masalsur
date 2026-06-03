@@ -80,12 +80,27 @@ export default function SerieDetailPage({ params }: { params: { slug: string } }
           <h1 className="text-6xl md:text-9xl font-headline font-black tracking-tighter text-on-surface uppercase leading-none mb-8">
             {serie.title}
           </h1>
-          <Link
-            href="/series"
-            className="border border-outline text-on-surface px-8 py-4 font-headline font-black uppercase text-sm rounded-sm hover:bg-on-surface/5 transition-all"
-          >
-            Todas las Series
-          </Link>
+          <div className="flex gap-4 flex-wrap">
+            {serie.trailerUrl && (
+              <a
+                href={serie.trailerUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-primary text-on-primary px-8 py-4 font-headline font-black uppercase text-sm rounded-sm hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-95"
+              >
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
+                  play_arrow
+                </span>
+                Ver Trailer
+              </a>
+            )}
+            <Link
+              href="/series"
+              className="border border-outline text-on-surface px-8 py-4 font-headline font-black uppercase text-sm rounded-sm hover:bg-on-surface/5 transition-all"
+            >
+              Todas las Series
+            </Link>
+          </div>
         </div>
       </section>
 
