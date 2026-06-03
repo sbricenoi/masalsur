@@ -13,7 +13,8 @@
  *   SMTP_PORT=587
  *   SMTP_USER=tu@email.com
  *   SMTP_PASS=tu_password
- *   CONTACT_EMAIL_TO=destino@masalsur.cl
+ *   CONTACT_EMAIL_TO=max@masalsur.cl
+ *   CONTACT_EMAIL_CC=sebastianbriceno.1991@gmail.com
  *
  * INTEGRACIONES EXTERNAS ALTERNATIVAS:
  * ──────────────────────────────────────
@@ -73,7 +74,8 @@ export async function POST(req: NextRequest) {
 
       await transporter.sendMail({
         from: `"MÁS AL SUR Web" <${process.env.SMTP_USER}>`,
-        to: process.env.CONTACT_EMAIL_TO || "contacto@masalsur.cl",
+        to: process.env.CONTACT_EMAIL_TO || "max@masalsur.cl",
+        cc: process.env.CONTACT_EMAIL_CC || "sebastianbriceno.1991@gmail.com",
         replyTo: email,
         subject: `Nueva propuesta de proyecto — ${name}`,
         html: `
