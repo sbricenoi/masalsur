@@ -15,6 +15,7 @@
 
 # production
 /build
+masalsur-static.zip
 
 # misc
 .DS_Store

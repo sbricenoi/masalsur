@@ -18,6 +18,8 @@ const PROJECT_TYPES = [
   "Otro",
 ];
 
+const CONTACT_API_URL = process.env.NEXT_PUBLIC_CONTACT_API_URL || "/api/contacto";
+
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [feedbackMessage, setFeedbackMessage] = useState<string | null>(null);
@@ -28,7 +30,7 @@ export default function ContactForm() {
     setFeedbackMessage(null);
     const formData = new FormData(e.currentTarget);
     try {
-      const res = await fetch("/api/contacto", {
+      const res = await fetch(CONTACT_API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
