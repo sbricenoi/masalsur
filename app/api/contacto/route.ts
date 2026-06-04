@@ -28,32 +28,20 @@ import nodemailer from "nodemailer";
 import { validateContactForm } from "@/lib/contactValidation";
 import type { ContactFormData } from "@/lib/types";
 
-const ALLOWED_CONTACT_ORIGINS = [
-  "https://masalsur.cl",
-  "https://www.masalsur.cl",
-  "http://localhost:3000",
-];
-
-function getCorsHeaders(req: NextRequest) {
-  const origin = req.headers.get("origin");
-  const allowedOrigin =
-    origin && ALLOWED_CONTACT_ORIGINS.includes(origin) ? origin : undefined;
-
+function getCorsHeaders() {
   return {
-    ...(allowedOrigin ? { "Access-Control-Allow-Origin": allowedOrigin } : {}),
+    "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
-    Vary: "Origin",
   };
 }
 
 function contactJsonResponse(
-  req: NextRequest,
   body: { success?: boolean; message: string },
   init?: ResponseInit
 ) {
   const response = NextResponse.json(body, init);
-  Object.entries(getCorsHeaders(req)).forEach(([key, value]) => {
+  Object.entries(getCorsHeaders()).forEach(([key, value]) => {
     response.headers.set(key, value);
   });
   return response;
@@ -80,7 +68,7 @@ export async function POST(req: NextRequest) {
     /* Validación */
     const error = validateContactForm(body);
     if (error) {
-      return contactJsonResponse(req, { success: false, message: error }, { status: 400 });
+      return contactJsonResponse({ success: false, message: error }, { status: 400 });
     }
 
     const { name, email, phone, projectType, message } = body as ContactFormData;
@@ -149,14 +137,12 @@ ${message}
     }
 
     return contactJsonResponse(
-      req,
       { success: true, message: "¡Tu propuesta fue enviada exitosamente!" },
       { status: 200 }
     );
   } catch (err) {
     console.error("[API /contacto] Error:", err);
     return contactJsonResponse(
-      req,
       { success: false, message: "Error interno. Por favor intenta más tarde." },
       { status: 500 }
     );
@@ -164,14 +150,14 @@ ${message}
 }
 
 /* Preflight CORS para frontend estatico en cPanel */
-export async function OPTIONS(req: NextRequest) {
+export async function OPTIONS() {
   return new NextResponse(null, {
     status: 204,
-    headers: getCorsHeaders(req),
+    headers: getCorsHeaders(),
   });
 }
 
 /* Rechaza métodos que no sean POST */
-export async function GET(req: NextRequest) {
-  return contactJsonResponse(req, { message: "Método no permitido" }, { status: 405 });
+export async function GET() {
+  return contactJsonResponse({ message: "Método no permitido" }, { status: 405 });
 }

@@ -43,7 +43,7 @@ El proyecto mantiene dos modos de build:
 
 No se debe dejar `output: "export"` fijo en `next.config.mjs`, porque eso elimina el soporte de API Routes que necesita el correo.
 
-La API de contacto incluye CORS para permitir peticiones desde `https://masalsur.cl` y `https://www.masalsur.cl` hacia `https://masalsur.vercel.app/api/contacto`.
+La API de contacto incluye CORS sin credenciales (`Access-Control-Allow-Origin: *`) para permitir que el frontend estatico publicado en cPanel envie el formulario hacia `https://masalsur.vercel.app/api/contacto`.
 
 ## Validacion Del Formulario
 
