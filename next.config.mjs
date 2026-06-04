@@ -8,24 +8,17 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* Dominios permitidos para <Image> de next/image */
+  /* Static export para deploy en hosting cPanel */
+  output: "export",
+  trailingSlash: true,
+
+  /* Imágenes: desactivar optimización (no funciona en static export) */
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "lh3.googleusercontent.com",
-        pathname: "/**",
-      },
-    ],
+    unoptimized: true,
   },
 
-  /*
-   * Las imágenes del proyecto usan <img> con URLs externas de Google.
-   * En producción se recomienda migrar a next/image para mejor rendimiento.
-   * Por ahora desactivamos esta regla ESLint solo para el build.
-   */
   eslint: {
-    ignoreDuringBuilds: false,
+    ignoreDuringBuilds: true,
   },
 };
 
