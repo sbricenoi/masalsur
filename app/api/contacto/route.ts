@@ -82,7 +82,7 @@ export async function POST(req: NextRequest) {
               ${projectType ? `<tr><td style="padding: 8px 0; color: #888;">Tipo de proyecto</td><td style="padding: 8px 0;">${projectType}</td></tr>` : ""}
             </table>
             <h3 style="color: #888; margin-top: 24px;">Mensaje / Sinopsis</h3>
-            <p style="line-height: 1.7; background: #1c1b1b; padding: 16px; border-left: 3px solid #e9c176;">
+            <p style="line-height: 1.7; background: #f8f6f0; color: #1c1b1b; padding: 16px; border-left: 3px solid #e9c176; margin: 0; white-space: pre-wrap;">
               ${message.replace(/\n/g, "<br>")}
             </p>
             <p style="color: #555; font-size: 12px; margin-top: 24px;">
