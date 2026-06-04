@@ -3,10 +3,12 @@
 /**
  * components/contacto/ContactForm.tsx
  *
- * Formulario de contacto.
- * En static export (cPanel hosting) construye un mailto con los datos del formulario.
+ * Formulario de contacto con validación básica en cliente.
+ * Envía los datos al endpoint /api/contacto.
  */
 import { useState } from "react";
+import { CONTACT_FORM_RULES } from "@/lib/contactValidation";
+import type { ContactFormResponse } from "@/lib/types";
 
 const PROJECT_TYPES = [
   "Largometraje",
@@ -17,22 +19,39 @@ const PROJECT_TYPES = [
 ];
 
 export default function ContactForm() {
-  const [status, setStatus] = useState<"idle" | "success">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [feedbackMessage, setFeedbackMessage] = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setStatus("sending");
+    setFeedbackMessage(null);
     const formData = new FormData(e.currentTarget);
-    const name = formData.get("name") as string;
-    const email = formData.get("email") as string;
-    const projectType = formData.get("projectType") as string;
-    const message = formData.get("message") as string;
+    try {
+      const res = await fetch("/api/contacto", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          email: formData.get("email"),
+          projectType: formData.get("projectType"),
+          message: formData.get("message"),
+        }),
+      });
+      const response = (await res.json().catch(() => null)) as ContactFormResponse | null;
 
-    const subject = encodeURIComponent(`Propuesta: ${projectType} — ${name}`);
-    const body = encodeURIComponent(
-      `Nombre: ${name}\nCorreo: ${email}\nTipo de proyecto: ${projectType}\n\n${message}`
-    );
-    window.location.href = `mailto:max@masalsur.cl?subject=${subject}&body=${body}`;
-    setStatus("success");
+      if (!res.ok || !response?.success) {
+        setStatus("error");
+        setFeedbackMessage(response?.message || "Hubo un error al enviar. Inténtalo de nuevo.");
+        return;
+      }
+
+      setStatus("success");
+      setFeedbackMessage(response.message);
+    } catch {
+      setStatus("error");
+      setFeedbackMessage("No pudimos conectar con el servidor. Inténtalo nuevamente.");
+    }
   }
 
   return (
@@ -45,16 +64,13 @@ export default function ContactForm() {
       {status === "success" ? (
         <div className="py-16 text-center">
           <span className="material-symbols-outlined text-primary text-6xl mb-4 block">
-            mark_email_read
+            check_circle
           </span>
           <p className="text-on-surface font-headline font-bold text-xl">
-            Abriendo tu cliente de correo...
+            ¡Propuesta enviada con éxito!
           </p>
           <p className="text-on-surface-variant mt-2">
-            O escríbenos directamente a{" "}
-            <a href="mailto:max@masalsur.cl" className="text-primary underline">
-              max@masalsur.cl
-            </a>
+            Te responderemos a la brevedad.
           </p>
         </div>
       ) : (
@@ -68,10 +84,14 @@ export default function ContactForm() {
                 name="name"
                 type="text"
                 required
-                minLength={2}
+                minLength={CONTACT_FORM_RULES.nameMinLength}
+                aria-describedby="contact-name-help"
                 placeholder="Escribe tu nombre"
                 className="w-full bg-surface-container-lowest border border-outline-variant/50 outline-none focus:border-primary focus:ring-1 focus:ring-primary p-4 transition-all duration-300 text-on-surface rounded-lg placeholder:text-on-surface-variant/40"
               />
+              <p id="contact-name-help" className="text-xs text-on-surface-variant">
+                Mínimo {CONTACT_FORM_RULES.nameMinLength} caracteres.
+              </p>
             </div>
             <div className="space-y-2">
               <label className="text-xs font-label uppercase tracking-widest text-on-surface/60">
@@ -81,9 +101,13 @@ export default function ContactForm() {
                 name="email"
                 type="email"
                 required
+                aria-describedby="contact-email-help"
                 placeholder="nombre@ejemplo.com"
                 className="w-full bg-surface-container-lowest border border-outline-variant/50 outline-none focus:border-primary focus:ring-1 focus:ring-primary p-4 transition-all duration-300 text-on-surface rounded-lg placeholder:text-on-surface-variant/40"
               />
+              <p id="contact-email-help" className="text-xs text-on-surface-variant">
+                Ingresa un correo válido para que podamos responderte.
+              </p>
             </div>
           </div>
 
@@ -109,17 +133,28 @@ export default function ContactForm() {
               name="message"
               rows={5}
               required
-              minLength={10}
+              minLength={CONTACT_FORM_RULES.messageMinLength}
+              aria-describedby="contact-message-help"
               placeholder="Cuéntanos los detalles..."
               className="w-full bg-surface-container-lowest border border-outline-variant/50 outline-none focus:border-primary focus:ring-1 focus:ring-primary p-4 transition-all duration-300 text-on-surface rounded-lg placeholder:text-on-surface-variant/40"
             />
+            <p id="contact-message-help" className="text-xs text-on-surface-variant">
+              Mínimo {CONTACT_FORM_RULES.messageMinLength} caracteres.
+            </p>
           </div>
+
+          {status === "error" && (
+            <p role="alert" className="text-error text-sm">
+              {feedbackMessage}
+            </p>
+          )}
 
           <button
             type="submit"
-            className="w-full md:w-auto px-12 py-4 bg-primary text-on-primary font-headline font-black uppercase tracking-widest text-sm rounded-lg hover:bg-on-primary-container hover:shadow-xl hover:shadow-primary/20 active:scale-95 transition-all duration-300"
+            disabled={status === "sending"}
+            className="w-full md:w-auto px-12 py-4 bg-primary text-on-primary font-headline font-black uppercase tracking-widest text-sm rounded-lg hover:bg-on-primary-container hover:shadow-xl hover:shadow-primary/20 active:scale-95 transition-all duration-300 disabled:opacity-60"
           >
-            Enviar Propuesta
+            {status === "sending" ? "Enviando..." : "Enviar Propuesta"}
           </button>
         </form>
       )}
