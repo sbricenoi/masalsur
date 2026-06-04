@@ -32,6 +32,16 @@ CONTACT_EMAIL_CC=sebastianbriceno.1991@gmail.com
 
 `CONTACT_EMAIL_TO` permite cambiar el destinatario principal sin tocar codigo. Si no se define, el endpoint usa `max@masalsur.cl` como valor por defecto. `CONTACT_EMAIL_CC` permite cambiar la copia del formulario; si no se define, el endpoint usa `sebastianbriceno.1991@gmail.com`.
 
+## Validacion Del Formulario
+
+Las reglas del formulario se centralizan en `lib/contactValidation.ts` para que el cliente y la API usen los mismos minimos y mensajes:
+
+- Nombre: minimo 2 caracteres.
+- Correo: formato de email valido.
+- Mensaje / Sinopsis: minimo 10 caracteres.
+
+El componente `components/contacto/ContactForm.tsx` muestra ayudas visibles por campo y, cuando la API responde con error, presenta el mensaje especifico devuelto por `/api/contacto`.
+
 ## Consideraciones
 
 - `replyTo` se configura con el correo ingresado por la persona que envia el formulario, para responder directamente desde el cliente de correo.

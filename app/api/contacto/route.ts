@@ -25,22 +25,8 @@
  */
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { validateContactForm } from "@/lib/contactValidation";
 import type { ContactFormData } from "@/lib/types";
-
-/* ─── Validación básica del formulario ─── */
-function validateContactForm(data: Partial<ContactFormData>): string | null {
-  if (!data.name || data.name.trim().length < 2) {
-    return "El nombre debe tener al menos 2 caracteres.";
-  }
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!data.email || !emailRegex.test(data.email)) {
-    return "El correo electrónico no es válido.";
-  }
-  if (!data.message || data.message.trim().length < 10) {
-    return "El mensaje debe tener al menos 10 caracteres.";
-  }
-  return null;
-}
 
 /* ─── Construcción del transporte SMTP ─── */
 function createTransporter() {
